@@ -1,0 +1,237 @@
+Service,Resource,Resource Name,Issue,Severity,Recommendation
+EC2,sg-0f4beaeefbfc24288,project4-web-sg,Security group open to internet on port(s): 80,Medium,Allow only if this is intentionally a public web service.
+EC2,sg-0f4beaeefbfc24288,project4-web-sg,Security group open to internet on port(s): 8080,High,Restrict access to trusted IP ranges.
+EC2,sg-0f4beaeefbfc24288,project4-web-sg,Security group open to internet on port(s): 22,High,Restrict administrative access to trusted IP addresses only.
+EC2,sg-091c89d8f83af647b,launch-wizard-5,Security group open to internet on port(s): 80,Medium,Allow only if this is intentionally a public web service.
+EC2,sg-091c89d8f83af647b,launch-wizard-5,Security group open to internet on port(s): 1515,High,Restrict access to trusted IP ranges.
+EC2,sg-091c89d8f83af647b,launch-wizard-5,Security group open to internet on port(s): 22,High,Restrict administrative access to trusted IP addresses only.
+EC2,sg-091c89d8f83af647b,launch-wizard-5,Security group open to internet on port(s): 1514,High,Restrict access to trusted IP ranges.
+EC2,sg-091c89d8f83af647b,launch-wizard-5,Security group open to internet on port(s): 443,Medium,Allow only if this is intentionally a public web service.
+EC2,sg-091c89d8f83af647b,launch-wizard-5,Security group open to internet on port(s): 55000,High,Restrict access to trusted IP ranges.
+EC2,sg-0d9c2d1b6759e57c9,launch-wizard-1,Security group open to internet on port(s): 22,High,Restrict administrative access to trusted IP addresses only.
+EC2,sg-09800441b3126ed8e,launch-wizard-6,Security group open to internet on port(s): 80,Medium,Allow only if this is intentionally a public web service.
+EC2,sg-09800441b3126ed8e,launch-wizard-6,Security group open to internet on port(s): 1515,High,Restrict access to trusted IP ranges.
+EC2,sg-09800441b3126ed8e,launch-wizard-6,Security group open to internet on port(s): 22,High,Restrict administrative access to trusted IP addresses only.
+EC2,sg-09800441b3126ed8e,launch-wizard-6,Security group open to internet on port(s): 1514,High,Restrict access to trusted IP ranges.
+EC2,sg-09800441b3126ed8e,launch-wizard-6,Security group open to internet on port(s): 443,Medium,Allow only if this is intentionally a public web service.
+EC2,sg-09800441b3126ed8e,launch-wizard-6,Security group open to internet on port(s): 55000,High,Restrict access to trusted IP ranges.
+EC2,sg-05c8146a8c7a9d2e6,launch-wizard-2,Security group open to internet on port(s): 80,Medium,Allow only if this is intentionally a public web service.
+EC2,sg-05c8146a8c7a9d2e6,launch-wizard-2,Security group open to internet on port(s): 0-65535,High,Review whether this port range really needs public access.
+EC2,sg-05c8146a8c7a9d2e6,launch-wizard-2,Security group open to internet on port(s): 22,High,Restrict administrative access to trusted IP addresses only.
+EC2,sg-05c8146a8c7a9d2e6,launch-wizard-2,Security group open to internet on port(s): 443,Medium,Allow only if this is intentionally a public web service.
+EC2,sg-067d6ded63b57661c,launch-wizard-4,Security group open to internet on port(s): 80,Medium,Allow only if this is intentionally a public web service.
+EC2,sg-067d6ded63b57661c,launch-wizard-4,Security group open to internet on port(s): 1515,High,Restrict access to trusted IP ranges.
+EC2,sg-067d6ded63b57661c,launch-wizard-4,Security group open to internet on port(s): 22,High,Restrict administrative access to trusted IP addresses only.
+EC2,sg-067d6ded63b57661c,launch-wizard-4,Security group open to internet on port(s): 1514,High,Restrict access to trusted IP ranges.
+EC2,sg-067d6ded63b57661c,launch-wizard-4,Security group open to internet on port(s): 443,Medium,Allow only if this is intentionally a public web service.
+EC2,sg-067d6ded63b57661c,launch-wizard-4,Security group open to internet on port(s): 55000,High,Restrict access to trusted IP ranges.
+EC2,sg-05855abbfbe8af654,launch-wizard-3,Security group open to internet on port(s): 80,Medium,Allow only if this is intentionally a public web service.
+EC2,sg-05855abbfbe8af654,launch-wizard-3,Security group open to internet on port(s): 22,High,Restrict administrative access to trusted IP addresses only.
+EC2,sg-05855abbfbe8af654,launch-wizard-3,Security group open to internet on port(s): 443,Medium,Allow only if this is intentionally a public web service.
+IAM,prathisha-user-08,prathisha-user-08,IAM user does not have MFA enabled,Medium,Enable MFA for this IAM user.
+IAM,Account,PasswordPolicy,No IAM account password policy is configured,High,Configure a strong IAM password policy.
+CloudTrail,Account,Account,CloudTrail is not enabled,High,Enable CloudTrail for logging all API activity.
+AWS Config,Account,Account,AWS Config is not enabled,Medium,Enable AWS Config to monitor and record resource configurations.
+Docker,nginx:latest (debian 13.4),,"It was found that apt-key in apt, all versions, do not correctly valid ...",LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,[Privilege escalation possible to other user than root],LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: TOCTOU in the mount program when setting up loop devices,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: util-linux: Access control bypass due to improper hostname canonicalization,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,coreutils: race condition vulnerability in chown and chgrp,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: Information disclosure via cross-protocol redirect with OAuth2 bearer token,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: libcurl: Improper certificate validation due to cached TLS settings reuse,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: curl: Unauthorized access due to improper HTTP proxy connection reuse,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: Curl missing SFTP host verification with wolfSSH backend,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: Host verification bypass during SSH transfers,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: libssh key passphrase bypass without agent set,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,"It was found that apt-key in apt, all versions, do not correctly valid ...",LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: TOCTOU in the mount program when setting up loop devices,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: util-linux: Access control bypass due to improper hostname canonicalization,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,glibc: glibc: Denial of Service via iconv() function with specific character sets,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,glibc: glibc: Incorrect DNS response parsing via crafted DNS server response,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,glibc: glibc: Invalid DNS hostname returned via gethostbyaddr functions,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,glibc: glob implementation can cause excessive CPU and memory consumption due to crafted glob expressions,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,glibc: stack guard protection bypass,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,glibc: running ldd on malicious ELF leads to code execution because of wrong size computation,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,glibc: ASLR bypass using cache of thread stack and heap,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,glibc: information disclosure of heap addresses of pthread_created thread,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,glibc: glibc: Denial of Service via iconv() function with specific character sets,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,glibc: glibc: Incorrect DNS response parsing via crafted DNS server response,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,glibc: glibc: Invalid DNS hostname returned via gethostbyaddr functions,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,glibc: glob implementation can cause excessive CPU and memory consumption due to crafted glob expressions,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,glibc: stack guard protection bypass,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,glibc: running ldd on malicious ELF leads to code execution because of wrong size computation,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,glibc: ASLR bypass using cache of thread stack and heap,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,glibc: information disclosure of heap addresses of pthread_created thread,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,[Address a potential TOCTOU race condition in cap_set_file()],UNKNOWN,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: Information disclosure via cross-protocol redirect with OAuth2 bearer token,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: libcurl: Improper certificate validation due to cached TLS settings reuse,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: curl: Unauthorized access due to improper HTTP proxy connection reuse,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: Curl missing SFTP host verification with wolfSSH backend,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: Host verification bypass during SSH transfers,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,curl: libssh key passphrase bypass without agent set,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libde265 is an open source implementation of the h.265 video codec. Pr ...,HIGH,No fixed version provided
+Docker,nginx:latest (debian 13.4),,Heap Buffer Overflow vulnerability in Libde265 v1.0.15 allows attacker ...,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,Heap Buffer Overflow vulnerability in Libde265 v1.0.15 allows attacker ...,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libde265 is an open source implementation of the h.265 video codec. Pr ...,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,strukturag libde265 commit d9fea9d wa discovered to contain a segmenta ...,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libexpat: libexpat: Information disclosure and data integrity issues due to integer overflow in buffer reallocation,HIGH,No fixed version provided
+Docker,nginx:latest (debian 13.4),,firefox: thunderbird: expat: libexpat in Expat allows attackers to trigger large dynamic memory allocations via a small document that is submitted for parsing,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libexpat: libexpat: Denial of service via crafted file processing,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libexpat: libexpat: Denial of Service due to NULL pointer dereference,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libexpat: libexpat: Denial of Service via infinite loop in DTD content parsing,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libexpat: libexpat: Denial of Service via NULL pointer dereference after out-of-memory condition,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libexpat: libexpat null pointer dereference,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libgcrypt: ElGamal implementation doesn't have semantic security due to incorrectly encoded plaintexts possibly allowing to obtain sensitive information,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libgcrypt: vulnerable to Marvin Attack,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,HTTPS: block-wise chosen-plaintext attack against SSL/TLS (BEAST),LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,krb5: integer overflow in dbentry->n_key_data in kadmin/dbutil/dump.c,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libheif is an HEIF and AVIF file format decoder and encoder. Prior to  ...,HIGH,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libheif: libheif: Out-of-bounds read via local argument manipulation,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libheif is an HEIF and AVIF file format decoder and encoder. Prior to  ...,HIGH,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libheif: libheif: Out-of-bounds read via local argument manipulation,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libheif is an HEIF and AVIF file format decoder and encoder. Prior to  ...,HIGH,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libheif: libheif: Out-of-bounds read via local argument manipulation,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libtiff: memory malloc failure in tif_jbig.c could cause DOS.,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,krb5: integer overflow in dbentry->n_key_data in kadmin/dbutil/dump.c,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,krb5: integer overflow in dbentry->n_key_data in kadmin/dbutil/dump.c,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,krb5: integer overflow in dbentry->n_key_data in kadmin/dbutil/dump.c,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: TOCTOU in the mount program when setting up loop devices,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: util-linux: Access control bypass due to improper hostname canonicalization,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,openldap: incorrect multi-keyword mode cipherstring parsing,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,openldap: Privilege escalation via PID file manipulation,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,openldap: contrib/slapd-modules/nops/nops.c attempts to free stack buffer allowing remote attackers to cause a denial of service,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,openldap: Certificate validation incorrectly matches name against CN-ID,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,xz: XZ Utils: Denial of Service via buffer overflow in index decoding,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: TOCTOU in the mount program when setting up loop devices,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: util-linux: Access control bypass due to improper hostname canonicalization,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination,HIGH,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libpng: hardcoded value leads to heap-overflow,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libpng: libpng: Heap-based buffer overflow in pnm2png allows information disclosure and denial of service,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: TOCTOU in the mount program when setting up loop devices,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: util-linux: Access control bypass due to improper hostname canonicalization,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,sqlite: crafted SQL query allows a malicious user to obtain sensitive information,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,sqlite: SQLite: Information Disclosure via Crafted ZIP File,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key,MEDIUM,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group,LOW,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,Issue summary: An uncommon configuration of clients performing DANE TL ...,LOW,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,Issue summary: When a delta CRL that contains a Delta CRL Indicator ex ...,LOW,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,Issue summary: During processing of a crafted CMS EnvelopedData messag ...,LOW,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,Issue summary: During processing of a crafted CMS EnvelopedData messag ...,LOW,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,Issue summary: Converting an excessively large OCTET STRING value to a ...,LOW,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,systemd: systemd: Arbitrary code execution or Denial of Service via spurious IPC API call data,HIGH,No fixed version provided
+Docker,nginx:latest (debian 13.4),,systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,systemd: TOCTOU race condition when updating file permissions and SELinux security contexts,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,An issue was discovered in systemd 253. An attacker can modify a seale ...,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,An issue was discovered in systemd 253. An attacker can truncate a sea ...,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,An issue was discovered in systemd 253. An attacker can modify the con ...,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,[nspawn: escape-to-host via malformed optional config file],UNKNOWN,No fixed version provided
+Docker,nginx:latest (debian 13.4),,[udev: local root execution via malicious hardware devices and unsanitized kernel output],UNKNOWN,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libtasn1: libtasn1: Denial of Service via stack-based buffer overflow in asn1_expend_octet_string,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libtiff: libtiff: Arbitrary code execution or denial of service via signed integer overflow in TIFF file processing,HIGH,4.7.0-3+deb13u2
+Docker,nginx:latest (debian 13.4),,"libtiff: Memory leaks in tif_open.c, tif_lzw.c, and tif_aux.c",LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libtiff: NULL pointer dereference in the jpeg_fdct_16x16 function in jfdctint.c,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,tiff: Malicious file leads to a denial of service in TIFF File Handler,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libtiff: libtiff: Denial of Service via NULL pointer dereference in tif_open.c,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libtiff: libtiff: Denial of Service via buffer overflow,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libtiff: libtiff: Denial of service via double free in tiffcrop.c,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libtiff: LibTIFF Use-After-Free Vulnerability,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libtiff: LibTIFF Buffer Overflow,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libtiff: Libtiff Null Pointer Dereference Vulnerability,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,ncurses: ncurses: Buffer overflow vulnerability may lead to arbitrary code execution.,HIGH,No fixed version provided
+Docker,nginx:latest (debian 13.4),,gnu-ncurses: ncurses Stack Buffer Overflow,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,systemd: systemd: Arbitrary code execution or Denial of Service via spurious IPC API call data,HIGH,No fixed version provided
+Docker,nginx:latest (debian 13.4),,systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,systemd: TOCTOU race condition when updating file permissions and SELinux security contexts,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,An issue was discovered in systemd 253. An attacker can modify a seale ...,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,An issue was discovered in systemd 253. An attacker can truncate a sea ...,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,An issue was discovered in systemd 253. An attacker can modify the con ...,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,[nspawn: escape-to-host via malformed optional config file],UNKNOWN,No fixed version provided
+Docker,nginx:latest (debian 13.4),,[udev: local root execution via malicious hardware devices and unsanitized kernel output],UNKNOWN,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: TOCTOU in the mount program when setting up loop devices,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: util-linux: Access control bypass due to improper hostname canonicalization,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libxml2: libxml2: Denial of Service via uncontrolled recursion in XML catalog processing,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libxml2: libxml2: Uncontrolled Recursion Vulnerability,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libxml2: Unbounded RelaxNG Include Recursion Leading to Stack Overflow,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libxml2: libxml2: Denial of Service via crafted XML catalogs,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libxml2: Memory Leak Leading to Local Denial of Service in xmllint Interactive Shell,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libxslt: use-after-free with key data stored cross-RVT,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libxslt: math.random() in xslt uses unseeded randomness,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,libxslt: Type Confusion in exsltFuncResultCompfunction of libxslt,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: TOCTOU in the mount program when setting up loop devices,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: util-linux: Access control bypass due to improper hostname canonicalization,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,initscripts in rPath Linux 1 sets insecure permissions for the /var/lo ...,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,[more related to CVE-2005-4890],LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: TOCTOU in the mount program when setting up loop devices,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: util-linux: Access control bypass due to improper hostname canonicalization,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,ncurses: ncurses: Buffer overflow vulnerability may lead to arbitrary code execution.,HIGH,No fixed version provided
+Docker,nginx:latest (debian 13.4),,gnu-ncurses: ncurses Stack Buffer Overflow,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,ncurses: ncurses: Buffer overflow vulnerability may lead to arbitrary code execution.,HIGH,No fixed version provided
+Docker,nginx:latest (debian 13.4),,gnu-ncurses: ncurses Stack Buffer Overflow,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key,MEDIUM,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group,LOW,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,Issue summary: An uncommon configuration of clients performing DANE TL ...,LOW,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,Issue summary: When a delta CRL that contains a Delta CRL Indicator ex ...,LOW,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,Issue summary: During processing of a crafted CMS EnvelopedData messag ...,LOW,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,Issue summary: During processing of a crafted CMS EnvelopedData messag ...,LOW,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,Issue summary: Converting an excessively large OCTET STRING value to a ...,LOW,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key,MEDIUM,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group,LOW,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,Issue summary: An uncommon configuration of clients performing DANE TL ...,LOW,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,Issue summary: When a delta CRL that contains a Delta CRL Indicator ex ...,LOW,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,Issue summary: During processing of a crafted CMS EnvelopedData messag ...,LOW,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,Issue summary: During processing of a crafted CMS EnvelopedData messag ...,LOW,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,Issue summary: Converting an excessively large OCTET STRING value to a ...,LOW,3.5.5-1~deb13u2
+Docker,nginx:latest (debian 13.4),,initscripts in rPath Linux 1 sets insecure permissions for the /var/lo ...,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,[more related to CVE-2005-4890],LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,perl: File:: Temp insecure temporary file handling,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,[sysvinit: no-root option in expert installer exposes locally exploitable security flaw],LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,tar: tar: Hidden file injection via crafted archives,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,tar: does not properly warn the user when extracting setuid or setgid files,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,[tar's rmt command may have undesired side effects],LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: TOCTOU in the mount program when setting up loop devices,MEDIUM,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,util-linux: util-linux: Access control bypass due to improper hostname canonicalization,LOW,No fixed version provided
+Docker,nginx:latest (debian 13.4),,zlib: zlib: Denial of Service via infinite loop in CRC32 combine functions,MEDIUM,No fixed version provided

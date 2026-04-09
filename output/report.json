@@ -1,0 +1,1890 @@
+[
+    {
+        "service": "EC2",
+        "resource": "sg-0f4beaeefbfc24288",
+        "resource_name": "project4-web-sg",
+        "issue": "Security group open to internet on port(s): 80",
+        "severity": "Medium",
+        "recommendation": "Allow only if this is intentionally a public web service."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-0f4beaeefbfc24288",
+        "resource_name": "project4-web-sg",
+        "issue": "Security group open to internet on port(s): 8080",
+        "severity": "High",
+        "recommendation": "Restrict access to trusted IP ranges."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-0f4beaeefbfc24288",
+        "resource_name": "project4-web-sg",
+        "issue": "Security group open to internet on port(s): 22",
+        "severity": "High",
+        "recommendation": "Restrict administrative access to trusted IP addresses only."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-091c89d8f83af647b",
+        "resource_name": "launch-wizard-5",
+        "issue": "Security group open to internet on port(s): 80",
+        "severity": "Medium",
+        "recommendation": "Allow only if this is intentionally a public web service."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-091c89d8f83af647b",
+        "resource_name": "launch-wizard-5",
+        "issue": "Security group open to internet on port(s): 1515",
+        "severity": "High",
+        "recommendation": "Restrict access to trusted IP ranges."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-091c89d8f83af647b",
+        "resource_name": "launch-wizard-5",
+        "issue": "Security group open to internet on port(s): 22",
+        "severity": "High",
+        "recommendation": "Restrict administrative access to trusted IP addresses only."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-091c89d8f83af647b",
+        "resource_name": "launch-wizard-5",
+        "issue": "Security group open to internet on port(s): 1514",
+        "severity": "High",
+        "recommendation": "Restrict access to trusted IP ranges."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-091c89d8f83af647b",
+        "resource_name": "launch-wizard-5",
+        "issue": "Security group open to internet on port(s): 443",
+        "severity": "Medium",
+        "recommendation": "Allow only if this is intentionally a public web service."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-091c89d8f83af647b",
+        "resource_name": "launch-wizard-5",
+        "issue": "Security group open to internet on port(s): 55000",
+        "severity": "High",
+        "recommendation": "Restrict access to trusted IP ranges."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-0d9c2d1b6759e57c9",
+        "resource_name": "launch-wizard-1",
+        "issue": "Security group open to internet on port(s): 22",
+        "severity": "High",
+        "recommendation": "Restrict administrative access to trusted IP addresses only."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-09800441b3126ed8e",
+        "resource_name": "launch-wizard-6",
+        "issue": "Security group open to internet on port(s): 80",
+        "severity": "Medium",
+        "recommendation": "Allow only if this is intentionally a public web service."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-09800441b3126ed8e",
+        "resource_name": "launch-wizard-6",
+        "issue": "Security group open to internet on port(s): 1515",
+        "severity": "High",
+        "recommendation": "Restrict access to trusted IP ranges."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-09800441b3126ed8e",
+        "resource_name": "launch-wizard-6",
+        "issue": "Security group open to internet on port(s): 22",
+        "severity": "High",
+        "recommendation": "Restrict administrative access to trusted IP addresses only."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-09800441b3126ed8e",
+        "resource_name": "launch-wizard-6",
+        "issue": "Security group open to internet on port(s): 1514",
+        "severity": "High",
+        "recommendation": "Restrict access to trusted IP ranges."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-09800441b3126ed8e",
+        "resource_name": "launch-wizard-6",
+        "issue": "Security group open to internet on port(s): 443",
+        "severity": "Medium",
+        "recommendation": "Allow only if this is intentionally a public web service."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-09800441b3126ed8e",
+        "resource_name": "launch-wizard-6",
+        "issue": "Security group open to internet on port(s): 55000",
+        "severity": "High",
+        "recommendation": "Restrict access to trusted IP ranges."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-05c8146a8c7a9d2e6",
+        "resource_name": "launch-wizard-2",
+        "issue": "Security group open to internet on port(s): 80",
+        "severity": "Medium",
+        "recommendation": "Allow only if this is intentionally a public web service."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-05c8146a8c7a9d2e6",
+        "resource_name": "launch-wizard-2",
+        "issue": "Security group open to internet on port(s): 0-65535",
+        "severity": "High",
+        "recommendation": "Review whether this port range really needs public access."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-05c8146a8c7a9d2e6",
+        "resource_name": "launch-wizard-2",
+        "issue": "Security group open to internet on port(s): 22",
+        "severity": "High",
+        "recommendation": "Restrict administrative access to trusted IP addresses only."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-05c8146a8c7a9d2e6",
+        "resource_name": "launch-wizard-2",
+        "issue": "Security group open to internet on port(s): 443",
+        "severity": "Medium",
+        "recommendation": "Allow only if this is intentionally a public web service."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-067d6ded63b57661c",
+        "resource_name": "launch-wizard-4",
+        "issue": "Security group open to internet on port(s): 80",
+        "severity": "Medium",
+        "recommendation": "Allow only if this is intentionally a public web service."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-067d6ded63b57661c",
+        "resource_name": "launch-wizard-4",
+        "issue": "Security group open to internet on port(s): 1515",
+        "severity": "High",
+        "recommendation": "Restrict access to trusted IP ranges."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-067d6ded63b57661c",
+        "resource_name": "launch-wizard-4",
+        "issue": "Security group open to internet on port(s): 22",
+        "severity": "High",
+        "recommendation": "Restrict administrative access to trusted IP addresses only."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-067d6ded63b57661c",
+        "resource_name": "launch-wizard-4",
+        "issue": "Security group open to internet on port(s): 1514",
+        "severity": "High",
+        "recommendation": "Restrict access to trusted IP ranges."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-067d6ded63b57661c",
+        "resource_name": "launch-wizard-4",
+        "issue": "Security group open to internet on port(s): 443",
+        "severity": "Medium",
+        "recommendation": "Allow only if this is intentionally a public web service."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-067d6ded63b57661c",
+        "resource_name": "launch-wizard-4",
+        "issue": "Security group open to internet on port(s): 55000",
+        "severity": "High",
+        "recommendation": "Restrict access to trusted IP ranges."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-05855abbfbe8af654",
+        "resource_name": "launch-wizard-3",
+        "issue": "Security group open to internet on port(s): 80",
+        "severity": "Medium",
+        "recommendation": "Allow only if this is intentionally a public web service."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-05855abbfbe8af654",
+        "resource_name": "launch-wizard-3",
+        "issue": "Security group open to internet on port(s): 22",
+        "severity": "High",
+        "recommendation": "Restrict administrative access to trusted IP addresses only."
+    },
+    {
+        "service": "EC2",
+        "resource": "sg-05855abbfbe8af654",
+        "resource_name": "launch-wizard-3",
+        "issue": "Security group open to internet on port(s): 443",
+        "severity": "Medium",
+        "recommendation": "Allow only if this is intentionally a public web service."
+    },
+    {
+        "service": "IAM",
+        "resource": "prathisha-user-08",
+        "resource_name": "prathisha-user-08",
+        "issue": "IAM user does not have MFA enabled",
+        "severity": "Medium",
+        "recommendation": "Enable MFA for this IAM user."
+    },
+    {
+        "service": "IAM",
+        "resource": "Account",
+        "resource_name": "PasswordPolicy",
+        "issue": "No IAM account password policy is configured",
+        "severity": "High",
+        "recommendation": "Configure a strong IAM password policy."
+    },
+    {
+        "service": "CloudTrail",
+        "resource": "Account",
+        "resource_name": "Account",
+        "issue": "CloudTrail is not enabled",
+        "severity": "High",
+        "recommendation": "Enable CloudTrail for logging all API activity."
+    },
+    {
+        "service": "AWS Config",
+        "resource": "Account",
+        "resource_name": "Account",
+        "issue": "AWS Config is not enabled",
+        "severity": "Medium",
+        "recommendation": "Enable AWS Config to monitor and record resource configurations."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "It was found that apt-key in apt, all versions, do not correctly valid ...",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "It was found that apt-key in apt, all versions, do not correctly validate gpg keys with the master keyring, leading to a potential man-in-the-middle attack."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "[Privilege escalation possible to other user than root]",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": ""
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: TOCTOU in the mount program when setting up loop devices",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in util-linux. This vulnerability allows a heap buffer overread when processing 256-byte usernames, specifically within the `setpwnam()` function, affecting SUID (Set User ID) login-utils utilities writing to the password database."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: util-linux: Access control bypass due to improper hostname canonicalization",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "coreutils: race condition vulnerability in chown and chgrp",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "In GNU Coreutils through 8.29, chown-core.c in chown and chgrp does not prevent replacement of a plain file with a symlink during use of the POSIX \"-R -L\" options, which allows local users to modify the ownership of arbitrary files by leveraging a race condition."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in GNU Coreutils. The sort utility's begfield() function is vulnerable to a heap buffer under-read. The program may access memory outside the allocated buffer if a user runs a crafted command using the traditional key format. A malicious input could lead to a crash or leak sensitive data."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "When using `CURLOPT_PINNEDPUBLICKEY` option with libcurl or `--pinnedpubkey`\nwith the curl tool,curl should check the public key of the server certificate\nto verify the peer.\n\nThis check was skipped in a certain condition that would then make curl allow\nthe connection without performing the proper check, thus not noticing a\npossible impostor. To skip this check, the connection had to be done with QUIC\nwith ngtcp2 built to use GnuTLS and the user had to explicitly disable the\nstandard certificate verification."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: Information disclosure via cross-protocol redirect with OAuth2 bearer token",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "When an OAuth2 bearer token is used for an HTTP(S) transfer, and that transfer\nperforms a cross-protocol redirect to a second URL that uses an IMAP, LDAP,\nPOP3 or SMTP scheme, curl might wrongly pass on the bearer token to the new\ntarget host."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: libcurl: Improper certificate validation due to cached TLS settings reuse",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "When doing TLS related transfers with reused easy or multi handles and\naltering the  `CURLSSLOPT_NO_PARTIALCHAIN` option, libcurl could accidentally\nreuse a CA store cached in memory for which the partial chain option was\nreversed. Contrary to the user's wishes and expectations. This could make\nlibcurl find and accept a trust chain that it otherwise would not."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "libcurl can in some circumstances reuse the wrong connection when asked to do\nan Negotiate-authenticated HTTP or HTTPS request.\n\nlibcurl features a pool of recent connections so that subsequent requests can\nreuse an existing connection to avoid overhead.\n\nWhen reusing a connection a range of criterion must first be met. Due to a\nlogical error in the code, a request that was issued by an application could\nwrongfully reuse an existing connection to the same server that was\nauthenticated using different credentials. One underlying reason being that\nNegotiate sometimes authenticates *connections* and not *requests*, contrary\nto how HTTP is designed to work.\n\nAn application that allows Negotiate authentication to a server (that responds\nwanting Negotiate) with `user1:password1` and then does another operation to\nthe same server also using Negotiate but with `user2:password2` (while the\nprevious connection is still alive) - the second request wrongly reused the\nsame connection and since it then sees that the Negotiate negotiation is\nalready made, it just sends the request over that connection thinking it uses\nthe user2 credentials when it is in fact still using the connection\nauthenticated for user1...\n\nThe set of authentication methods to use is set with  `CURLOPT_HTTPAUTH`.\n\nApplications can disable libcurl's reuse of connections and thus mitigate this\nproblem, by using one of the following libcurl options to alter how\nconnections are or are not reused: `CURLOPT_FRESH_CONNECT`,\n`CURLOPT_MAXCONNECTS` and `CURLMOPT_MAX_HOST_CONNECTIONS` (if using the\ncurl_multi API)."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "When an OAuth2 bearer token is used for an HTTP(S) transfer, and that transfer\nperforms a redirect to a second URL, curl could leak that token to the second\nhostname under some circumstances.\n\nIf the hostname that the first request is redirected to has information in the\nused .netrc file, with either of the `machine` or `default` keywords, curl\nwould pass on the bearer token set for the first host also to the second one."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: curl: Unauthorized access due to improper HTTP proxy connection reuse",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "curl would wrongly reuse an existing HTTP proxy connection doing CONNECT to a\nserver, even if the new request uses different credentials for the HTTP proxy.\nThe proper behavior is to create or use a separate connection."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "When doing a second SMB request to the same host again, curl would wrongly use\na data pointer pointing into already freed memory."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: Curl missing SFTP host verification with wolfSSH backend",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "curl's code for managing SSH connections when SFTP was done using the wolfSSH\npowered backend was flawed and missed host verification mechanisms.\n\nThis prevents curl from detecting MITM attackers and more."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "When doing multi-threaded LDAPS transfers (LDAP over TLS) with libcurl,\nchanging TLS options in one thread would inadvertently change them globally\nand therefore possibly also affect other concurrently setup transfers.\n\nDisabling certificate verification for a specific transfer could\nunintentionally disable the feature for other threads as well."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: Host verification bypass during SSH transfers",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "When doing SSH-based transfers using either SCP or SFTP, and setting the\nknown_hosts file, libcurl could still mistakenly accept connecting to hosts\n*not present* in the specified file if they were added as recognized in the\nlibssh *global* known_hosts file."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: libssh key passphrase bypass without agent set",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "When doing SSH-based transfers using either SCP or SFTP, and asked to do\npublic key authentication, curl would wrongly still ask and authenticate using\na locally running SSH agent."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "It was found that apt-key in apt, all versions, do not correctly valid ...",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "It was found that apt-key in apt, all versions, do not correctly validate gpg keys with the master keyring, leading to a potential man-in-the-middle attack."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: TOCTOU in the mount program when setting up loop devices",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in util-linux. This vulnerability allows a heap buffer overread when processing 256-byte usernames, specifically within the `setpwnam()` function, affecting SUID (Set User ID) login-utils utilities writing to the password database."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: util-linux: Access control bypass due to improper hostname canonicalization",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "glibc: glibc: Denial of Service via iconv() function with specific character sets",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "The iconv() function in the GNU C Library versions 2.43 and earlier may crash due to an assertion failure when converting inputs from the IBM1390 or IBM1399 character sets, which may be used to remotely crash an application.\n\n\n\nThis vulnerability can be trivially mitigated by removing the IBM1390 and IBM1399 character sets from systems that do not need them."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "glibc: glibc: Incorrect DNS response parsing via crafted DNS server response",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C Library version 2.34 to version 2.43 could, with a crafted response from the configured DNS server, result in a violation of the DNS specification that causes the application to treat a non-answer section of the DNS response as a valid answer."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "glibc: glibc: Invalid DNS hostname returned via gethostbyaddr functions",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C library version 2.34 to version 2.43 could result in an invalid DNS hostname being returned to the caller in violation of the DNS specification."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "glibc: glob implementation can cause excessive CPU and memory consumption due to crafted glob expressions",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "The glob implementation in the GNU C Library (aka glibc or libc6) allows remote authenticated users to cause a denial of service (CPU and memory consumption) via crafted glob expressions that do not match any pathnames, as demonstrated by glob expressions in STAT commands to an FTP daemon, a different vulnerability than CVE-2010-2632."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "In the GNU C Library (aka glibc or libc6) through 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c has Uncontrolled Recursion, as demonstrated by '(\\227|)(\\\\1\\\\1|t1|\\\\\\2537)+' in grep."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "glibc: stack guard protection bypass",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass stack guard protection. The component is: nptl. The attack vector is: Exploit stack buffer overflow vulnerability and use this bypass vulnerability to bypass stack guard. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "glibc: running ldd on malicious ELF leads to code execution because of wrong size computation",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "GNU Libc current is affected by: Re-mapping current loaded library with malicious ELF file. The impact is: In worst case attacker may evaluate privileges. The component is: libld. The attack vector is: Attacker sends 2 ELF files to victim and asks to run ldd on it. ldd execute code. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "glibc: ASLR bypass using cache of thread stack and heap",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass ASLR using cache of thread stack and heap. The component is: glibc. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "glibc: information disclosure of heap addresses of pthread_created thread",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may guess the heap addresses of pthread_created thread. The component is: glibc. NOTE: the vendor's position is \"ASLR bypass itself is not a vulnerability."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "In the GNU C Library (aka glibc or libc6) through 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c has Uncontrolled Recursion, as demonstrated by '(|)(\\\\1\\\\1)*' in grep, a different issue than CVE-2018-20796. NOTE: the software maintainer disputes that this is a vulnerability because the behavior occurs only with a crafted pattern"
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "glibc: glibc: Denial of Service via iconv() function with specific character sets",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "The iconv() function in the GNU C Library versions 2.43 and earlier may crash due to an assertion failure when converting inputs from the IBM1390 or IBM1399 character sets, which may be used to remotely crash an application.\n\n\n\nThis vulnerability can be trivially mitigated by removing the IBM1390 and IBM1399 character sets from systems that do not need them."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "glibc: glibc: Incorrect DNS response parsing via crafted DNS server response",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C Library version 2.34 to version 2.43 could, with a crafted response from the configured DNS server, result in a violation of the DNS specification that causes the application to treat a non-answer section of the DNS response as a valid answer."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "glibc: glibc: Invalid DNS hostname returned via gethostbyaddr functions",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "Calling gethostbyaddr or gethostbyaddr_r with a configured nsswitch.conf that specifies the library's DNS backend in the GNU C library version 2.34 to version 2.43 could result in an invalid DNS hostname being returned to the caller in violation of the DNS specification."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "glibc: glob implementation can cause excessive CPU and memory consumption due to crafted glob expressions",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "The glob implementation in the GNU C Library (aka glibc or libc6) allows remote authenticated users to cause a denial of service (CPU and memory consumption) via crafted glob expressions that do not match any pathnames, as demonstrated by glob expressions in STAT commands to an FTP daemon, a different vulnerability than CVE-2010-2632."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "In the GNU C Library (aka glibc or libc6) through 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c has Uncontrolled Recursion, as demonstrated by '(\\227|)(\\\\1\\\\1|t1|\\\\\\2537)+' in grep."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "glibc: stack guard protection bypass",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass stack guard protection. The component is: nptl. The attack vector is: Exploit stack buffer overflow vulnerability and use this bypass vulnerability to bypass stack guard. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "glibc: running ldd on malicious ELF leads to code execution because of wrong size computation",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "GNU Libc current is affected by: Re-mapping current loaded library with malicious ELF file. The impact is: In worst case attacker may evaluate privileges. The component is: libld. The attack vector is: Attacker sends 2 ELF files to victim and asks to run ldd on it. ldd execute code. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "glibc: ASLR bypass using cache of thread stack and heap",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may bypass ASLR using cache of thread stack and heap. The component is: glibc. NOTE: Upstream comments indicate \"this is being treated as a non-security bug and no real threat."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "glibc: information disclosure of heap addresses of pthread_created thread",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "GNU Libc current is affected by: Mitigation bypass. The impact is: Attacker may guess the heap addresses of pthread_created thread. The component is: glibc. NOTE: the vendor's position is \"ASLR bypass itself is not a vulnerability."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "In the GNU C Library (aka glibc or libc6) through 2.29, check_dst_limits_calc_pos_1 in posix/regexec.c has Uncontrolled Recursion, as demonstrated by '(|)(\\\\1\\\\1)*' in grep, a different issue than CVE-2018-20796. NOTE: the software maintainer disputes that this is a vulnerability because the behavior occurs only with a crafted pattern"
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "[Address a potential TOCTOU race condition in cap_set_file()]",
+        "severity": "UNKNOWN",
+        "recommendation": "No fixed version provided",
+        "description": ""
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: Public key pinning bypass via QUIC and GnuTLS allows server impersonation",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "When using `CURLOPT_PINNEDPUBLICKEY` option with libcurl or `--pinnedpubkey`\nwith the curl tool,curl should check the public key of the server certificate\nto verify the peer.\n\nThis check was skipped in a certain condition that would then make curl allow\nthe connection without performing the proper check, thus not noticing a\npossible impostor. To skip this check, the connection had to be done with QUIC\nwith ngtcp2 built to use GnuTLS and the user had to explicitly disable the\nstandard certificate verification."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: Information disclosure via cross-protocol redirect with OAuth2 bearer token",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "When an OAuth2 bearer token is used for an HTTP(S) transfer, and that transfer\nperforms a cross-protocol redirect to a second URL that uses an IMAP, LDAP,\nPOP3 or SMTP scheme, curl might wrongly pass on the bearer token to the new\ntarget host."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: libcurl: Improper certificate validation due to cached TLS settings reuse",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "When doing TLS related transfers with reused easy or multi handles and\naltering the  `CURLSSLOPT_NO_PARTIALCHAIN` option, libcurl could accidentally\nreuse a CA store cached in memory for which the partial chain option was\nreversed. Contrary to the user's wishes and expectations. This could make\nlibcurl find and accept a trust chain that it otherwise would not."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: curl: Authentication bypass due to incorrect connection reuse with Negotiate authentication",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "libcurl can in some circumstances reuse the wrong connection when asked to do\nan Negotiate-authenticated HTTP or HTTPS request.\n\nlibcurl features a pool of recent connections so that subsequent requests can\nreuse an existing connection to avoid overhead.\n\nWhen reusing a connection a range of criterion must first be met. Due to a\nlogical error in the code, a request that was issued by an application could\nwrongfully reuse an existing connection to the same server that was\nauthenticated using different credentials. One underlying reason being that\nNegotiate sometimes authenticates *connections* and not *requests*, contrary\nto how HTTP is designed to work.\n\nAn application that allows Negotiate authentication to a server (that responds\nwanting Negotiate) with `user1:password1` and then does another operation to\nthe same server also using Negotiate but with `user2:password2` (while the\nprevious connection is still alive) - the second request wrongly reused the\nsame connection and since it then sees that the Negotiate negotiation is\nalready made, it just sends the request over that connection thinking it uses\nthe user2 credentials when it is in fact still using the connection\nauthenticated for user1...\n\nThe set of authentication methods to use is set with  `CURLOPT_HTTPAUTH`.\n\nApplications can disable libcurl's reuse of connections and thus mitigate this\nproblem, by using one of the following libcurl options to alter how\nconnections are or are not reused: `CURLOPT_FRESH_CONNECT`,\n`CURLOPT_MAXCONNECTS` and `CURLMOPT_MAX_HOST_CONNECTIONS` (if using the\ncurl_multi API)."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: curl: Information disclosure via OAuth2 bearer token leakage during HTTP(S) redirect",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "When an OAuth2 bearer token is used for an HTTP(S) transfer, and that transfer\nperforms a redirect to a second URL, curl could leak that token to the second\nhostname under some circumstances.\n\nIf the hostname that the first request is redirected to has information in the\nused .netrc file, with either of the `machine` or `default` keywords, curl\nwould pass on the bearer token set for the first host also to the second one."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: curl: Unauthorized access due to improper HTTP proxy connection reuse",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "curl would wrongly reuse an existing HTTP proxy connection doing CONNECT to a\nserver, even if the new request uses different credentials for the HTTP proxy.\nThe proper behavior is to create or use a separate connection."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: curl: Arbitrary code execution or Denial of Service via use-after-free in SMB request handling",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "When doing a second SMB request to the same host again, curl would wrongly use\na data pointer pointing into already freed memory."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: Curl missing SFTP host verification with wolfSSH backend",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "curl's code for managing SSH connections when SFTP was done using the wolfSSH\npowered backend was flawed and missed host verification mechanisms.\n\nThis prevents curl from detecting MITM attackers and more."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: curl: Security bypass due to global TLS option changes in multi-threaded LDAPS transfers",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "When doing multi-threaded LDAPS transfers (LDAP over TLS) with libcurl,\nchanging TLS options in one thread would inadvertently change them globally\nand therefore possibly also affect other concurrently setup transfers.\n\nDisabling certificate verification for a specific transfer could\nunintentionally disable the feature for other threads as well."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: Host verification bypass during SSH transfers",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "When doing SSH-based transfers using either SCP or SFTP, and setting the\nknown_hosts file, libcurl could still mistakenly accept connecting to hosts\n*not present* in the specified file if they were added as recognized in the\nlibssh *global* known_hosts file."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "curl: libssh key passphrase bypass without agent set",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "When doing SSH-based transfers using either SCP or SFTP, and asked to do\npublic key authentication, curl would wrongly still ask and authenticate using\na locally running SSH agent."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libde265 is an open source implementation of the h.265 video codec. Pr ...",
+        "severity": "HIGH",
+        "recommendation": "No fixed version provided",
+        "description": "libde265 is an open source implementation of the h.265 video codec. Prior to version 1.0.17, a malformed H.265 PPS NAL unit causes a segmentation fault in pic_parameter_set::set_derived_values(). This issue has been patched in version 1.0.17."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "Heap Buffer Overflow vulnerability in Libde265 v1.0.15 allows attacker ...",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "Heap Buffer Overflow vulnerability in Libde265 v1.0.15 allows attackers to crash the application via crafted payload to display444as420 function at sdl.cc"
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "Heap Buffer Overflow vulnerability in Libde265 v1.0.15 allows attacker ...",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "Heap Buffer Overflow vulnerability in Libde265 v1.0.15 allows attackers to crash the application via crafted payload to __interceptor_memcpy function."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libde265 is an open source implementation of the h.265 video codec. Pr ...",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "libde265 is an open source implementation of the h.265 video codec. Prior to version 1.0.17, a crafted HEVC bitstream causes an out-of-bounds heap write confirmed by AddressSanitizer. The trigger is a stale ctb_info.log2unitSize after an SPS change where PicWidthInCtbsY and PicHeightInCtbsY stay constant but Log2CtbSizeY changes, causing set_SliceHeaderIndex to index past the allocated image metadata array and write 2 bytes past the end of a heap allocation. This issue has been patched in version 1.0.17."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "strukturag libde265 commit d9fea9d wa discovered to contain a segmenta ...",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "strukturag libde265 commit d9fea9d wa discovered to contain a segmentation fault via the component decoder_context::compute_framedrop_table()."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libexpat: libexpat: Information disclosure and data integrity issues due to integer overflow in buffer reallocation",
+        "severity": "HIGH",
+        "recommendation": "No fixed version provided",
+        "description": "In libexpat before 2.7.4, the doContent function does not properly determine the buffer size bufSize because there is no integer overflow check for tag buffer reallocation."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "firefox: thunderbird: expat: libexpat in Expat allows attackers to trigger large dynamic memory allocations via a small document that is submitted for parsing",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "libexpat in Expat before 2.7.2 allows attackers to trigger large dynamic memory allocations via a small document that is submitted for parsing."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libexpat: libexpat: Denial of service via crafted file processing",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "In libexpat through 2.7.3, a crafted file with an approximate size of 2 MiB can lead to dozens of seconds of processing time."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libexpat: libexpat: Denial of Service due to NULL pointer dereference",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "libexpat before 2.7.5 allows a NULL pointer dereference with empty external parameter entity content."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libexpat: libexpat: Denial of Service via infinite loop in DTD content parsing",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "libexpat before 2.7.5 allows an infinite loop while parsing DTD content."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libexpat: libexpat: Denial of Service via NULL pointer dereference after out-of-memory condition",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "libexpat before 2.7.5 allows a NULL pointer dereference in the function setContext on retry after an earlier ouf-of-memory condition."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libexpat: libexpat null pointer dereference",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "In libexpat before 2.7.4, XML_ExternalEntityParserCreate does not copy unknown encoding handler user data."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libgcrypt: ElGamal implementation doesn't have semantic security due to incorrectly encoded plaintexts possibly allowing to obtain sensitive information",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "cipher/elgamal.c in Libgcrypt through 1.8.2, when used to encrypt messages directly, improperly encodes plaintexts, which allows attackers to obtain sensitive information by reading ciphertext data (i.e., it does not have semantic security in face of a ciphertext-only attack). The Decisional Diffie-Hellman (DDH) assumption does not hold for Libgcrypt's ElGamal implementation."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libgcrypt: vulnerable to Marvin Attack",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A timing-based side-channel flaw was found in libgcrypt's RSA implementation. This issue may allow a remote attacker to initiate a Bleichenbacher-style attack, which can lead to the decryption of RSA ciphertexts."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "HTTPS: block-wise chosen-plaintext attack against SSL/TLS (BEAST)",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "The SSL protocol, as used in certain configurations in Microsoft Windows and Microsoft Internet Explorer, Mozilla Firefox, Google Chrome, Opera, and other products, encrypts data by using CBC mode with chained initialization vectors, which allows man-in-the-middle attackers to obtain plaintext HTTP headers via a blockwise chosen-boundary attack (BCBA) on an HTTPS session, in conjunction with JavaScript code that uses (1) the HTML5 WebSocket API, (2) the Java URLConnection API, or (3) the Silverlight WebClient API, aka a \"BEAST\" attack."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "krb5: integer overflow in dbentry->n_key_data in kadmin/dbutil/dump.c",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry->n_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libheif is an HEIF and AVIF file format decoder and encoder. Prior to  ...",
+        "severity": "HIGH",
+        "recommendation": "No fixed version provided",
+        "description": "libheif is an HEIF and AVIF file format decoder and encoder. Prior to version 1.21.0, a crafted HEIF that exercises the overlay image item path triggers a heap buffer over-read in `HeifPixelImage::overlay()`. The function computes a negative row length (likely from an unclipped overlay rectangle or invalid offsets), which then underflows when converted to `size_t` and is passed to `memcpy`, causing a very large read past the end of the source plane and a crash. Version 1.21.0 contains a patch. As a workaround, avoid decoding images using `iovl` overlay boxes."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libheif: libheif: Out-of-bounds read via local argument manipulation",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A vulnerability was determined in strukturag libheif up to 1.21.2. This affects the function vvdec_push_data2 of the file libheif/plugins/decoder_vvdec.cc of the component HEIF File Parser. Executing a manipulation of the argument size can lead to out-of-bounds read. The attack needs to be launched locally. The exploit has been publicly disclosed and may be utilized. This patch is called b97c8b5f198b27f375127cd597a35f2113544d03. It is advisable to implement a patch to correct this issue."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libheif is an HEIF and AVIF file format decoder and encoder. Prior to  ...",
+        "severity": "HIGH",
+        "recommendation": "No fixed version provided",
+        "description": "libheif is an HEIF and AVIF file format decoder and encoder. Prior to version 1.21.0, a crafted HEIF that exercises the overlay image item path triggers a heap buffer over-read in `HeifPixelImage::overlay()`. The function computes a negative row length (likely from an unclipped overlay rectangle or invalid offsets), which then underflows when converted to `size_t` and is passed to `memcpy`, causing a very large read past the end of the source plane and a crash. Version 1.21.0 contains a patch. As a workaround, avoid decoding images using `iovl` overlay boxes."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libheif: libheif: Out-of-bounds read via local argument manipulation",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A vulnerability was determined in strukturag libheif up to 1.21.2. This affects the function vvdec_push_data2 of the file libheif/plugins/decoder_vvdec.cc of the component HEIF File Parser. Executing a manipulation of the argument size can lead to out-of-bounds read. The attack needs to be launched locally. The exploit has been publicly disclosed and may be utilized. This patch is called b97c8b5f198b27f375127cd597a35f2113544d03. It is advisable to implement a patch to correct this issue."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libheif is an HEIF and AVIF file format decoder and encoder. Prior to  ...",
+        "severity": "HIGH",
+        "recommendation": "No fixed version provided",
+        "description": "libheif is an HEIF and AVIF file format decoder and encoder. Prior to version 1.21.0, a crafted HEIF that exercises the overlay image item path triggers a heap buffer over-read in `HeifPixelImage::overlay()`. The function computes a negative row length (likely from an unclipped overlay rectangle or invalid offsets), which then underflows when converted to `size_t` and is passed to `memcpy`, causing a very large read past the end of the source plane and a crash. Version 1.21.0 contains a patch. As a workaround, avoid decoding images using `iovl` overlay boxes."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libheif: libheif: Out-of-bounds read via local argument manipulation",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A vulnerability was determined in strukturag libheif up to 1.21.2. This affects the function vvdec_push_data2 of the file libheif/plugins/decoder_vvdec.cc of the component HEIF File Parser. Executing a manipulation of the argument size can lead to out-of-bounds read. The attack needs to be launched locally. The exploit has been publicly disclosed and may be utilized. This patch is called b97c8b5f198b27f375127cd597a35f2113544d03. It is advisable to implement a patch to correct this issue."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libtiff: memory malloc failure in tif_jbig.c could cause DOS.",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "In LibTIFF 4.0.8, there is a memory malloc failure in tif_jbig.c. A crafted TIFF document can lead to an abort resulting in a remote denial of service attack."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "krb5: integer overflow in dbentry->n_key_data in kadmin/dbutil/dump.c",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry->n_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "krb5: integer overflow in dbentry->n_key_data in kadmin/dbutil/dump.c",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry->n_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "krb5: integer overflow in dbentry->n_key_data in kadmin/dbutil/dump.c",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "An issue was discovered in MIT Kerberos 5 (aka krb5) through 1.16. There is a variable \"dbentry->n_key_data\" in kadmin/dbutil/dump.c that can store 16-bit data but unknowingly the developer has assigned a \"u4\" variable to it, which is for 32-bit data. An attacker can use this vulnerability to affect other artifacts of the database as we know that a Kerberos database dump file contains trusted data."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak in /krb5/src/lib/rpc/pmap_rmt.c."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "Kerberos 5 (aka krb5) 1.21.2 contains a memory leak vulnerability in /krb5/src/lib/gssapi/krb5/k5sealv3.c."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: TOCTOU in the mount program when setting up loop devices",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in util-linux. This vulnerability allows a heap buffer overread when processing 256-byte usernames, specifically within the `setpwnam()` function, affecting SUID (Set User ID) login-utils utilities writing to the password database."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: util-linux: Access control bypass due to improper hostname canonicalization",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "openldap: incorrect multi-keyword mode cipherstring parsing",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "The nss_parse_ciphers function in libraries/libldap/tls_m.c in OpenLDAP does not properly parse OpenSSL-style multi-keyword mode cipher strings, which might cause a weaker than intended cipher to be used and allow remote attackers to have unspecified impact via unknown vectors."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "openldap: Privilege escalation via PID file manipulation",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "slapd in OpenLDAP 2.4.45 and earlier creates a PID file after dropping privileges to a non-root account, which might allow local users to kill arbitrary processes by leveraging access to this non-root account for PID file modification before a root script executes a \"kill `cat /pathname`\" command, as demonstrated by openldap-initscript."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "openldap: contrib/slapd-modules/nops/nops.c attempts to free stack buffer allowing remote attackers to cause a denial of service",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "contrib/slapd-modules/nops/nops.c in OpenLDAP through 2.4.45, when both the nops module and the memberof overlay are enabled, attempts to free a buffer that was allocated on the stack, which allows remote attackers to cause a denial of service (slapd crash) via a member MODDN operation."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "openldap: Certificate validation incorrectly matches name against CN-ID",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "libldap in certain third-party OpenLDAP packages has a certificate-validation flaw when the third-party package is asserting RFC6125 support. It considers CN even when there is a non-matching subjectAltName (SAN). This is fixed in, for example, openldap-2.4.46-10.el8 in Red Hat Enterprise Linux."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "OpenLDAP: OpenLDAP LMDB: Denial of Service and Information Disclosure via Heap Buffer Underflow",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "OpenLDAP Lightning Memory-Mapped Database (LMDB) versions up to and including 0.9.14, prior to commit 8e1fda8, contain a heap buffer underflow in the readline() function of mdb_load. When processing malformed input containing an embedded NUL byte, an unsigned offset calculation can underflow and cause an out-of-bounds read of one byte before the allocated heap buffer. This can cause mdb_load to crash, leading to a limited denial-of-service condition."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "xz: XZ Utils: Denial of Service via buffer overflow in index decoding",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "XZ Utils provide a general-purpose data-compression library plus command-line tools. Prior to version 5.8.3, if lzma_index_decoder() was used to decode an Index that contained no Records, the resulting lzma_index was left in a state where where a subsequent lzma_index_append() would allocate too little memory, and a buffer overflow would occur. This issue has been patched in version 5.8.3."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: TOCTOU in the mount program when setting up loop devices",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in util-linux. This vulnerability allows a heap buffer overread when processing 256-byte usernames, specifically within the `setpwnam()` function, affecting SUID (Set User ID) login-utils utilities writing to the password database."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: util-linux: Access control bypass due to improper hostname canonicalization",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "nghttp2: nghttp2: Denial of Service via malformed HTTP/2 frames after session termination",
+        "severity": "HIGH",
+        "recommendation": "No fixed version provided",
+        "description": "nghttp2 is an implementation of the Hypertext Transfer Protocol version 2 in C. Prior to version 1.68.1, the nghttp2 library stops reading the incoming data when user facing public API `nghttp2_session_terminate_session` or `nghttp2_session_terminate_session2` is called by the application. They might be called internally by the library when it detects the situation that is subject to connection error. Due to the missing internal state validation, the library keeps reading the rest of the data after one of those APIs is called. Then receiving a malformed frame that causes FRAME_SIZE_ERROR causes assertion failure. nghttp2 v1.68.1 adds missing state validation to avoid assertion failure. No known workarounds are available."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libpng: hardcoded value leads to heap-overflow",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A heap overflow flaw was found in libpngs' pngimage.c program. This flaw allows an attacker with local network access to pass a specially crafted PNG file to the pngimage utility, causing an application to crash, leading to a denial of service."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libpng: libpng: Heap-based buffer overflow in pnm2png allows information disclosure and denial of service",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw has been found in pnggroup libpng up to 1.6.55. Affected by this vulnerability is the function do_pnm2png of the file contrib/pngminus/pnm2png.c of the component pnm2png. This manipulation of the argument width/height causes heap-based buffer overflow. The attack is restricted to local execution. The exploit has been published and may be used. The project was informed of the problem early through an issue report but has not responded yet."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: TOCTOU in the mount program when setting up loop devices",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in util-linux. This vulnerability allows a heap buffer overread when processing 256-byte usernames, specifically within the `setpwnam()` function, affecting SUID (Set User ID) login-utils utilities writing to the password database."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: util-linux: Access control bypass due to improper hostname canonicalization",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "sqlite: crafted SQL query allows a malicious user to obtain sensitive information",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A Memory Leak vulnerability exists in SQLite Project SQLite3 3.35.1 and 3.37.0 via maliciously crafted SQL Queries (made via editing the Database File), it is possible to query a record, and leak subsequent bytes of memory that extend beyond the record, which could let a malicious user obtain sensitive information. NOTE: The developer disputes this as a vulnerability stating that If you give SQLite a corrupted database file and submit a query against the database, it might read parts of the database that you did not intend or expect."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "sqlite: SQLite: Information Disclosure via Crafted ZIP File",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "An information disclosure issue in the zipfileInflate function in the zipfile extension in SQLite v3.51.1 and earlier allows attackers to obtain heap memory via supplying a crafted ZIP file."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key",
+        "severity": "MEDIUM",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: Applications using RSASVE key encapsulation to establish\na secret encryption key can send contents of an uninitialized memory buffer to\na malicious peer.\n\nImpact summary: The uninitialized buffer might contain sensitive data from the\nprevious execution of the application process which leads to sensitive data\nleakage to an attacker.\n\nRSA_public_encrypt() returns the number of bytes written on success and -1\non error. The affected code tests only whether the return value is non-zero.\nAs a result, if RSA encryption fails, encapsulation can still return success to\nthe caller, set the output lengths, and leave the caller to use the contents of\nthe ciphertext buffer as if a valid KEM ciphertext had been produced.\n\nIf applications use EVP_PKEY_encapsulate() with RSA/RSASVE on an\nattacker-supplied invalid RSA public key without first validating that key,\nthen this may cause stale or uninitialized contents of the caller-provided\nciphertext buffer to be disclosed to the attacker in place of the KEM\nciphertext.\n\nAs a workaround calling EVP_PKEY_public_check() or\nEVP_PKEY_public_check_quick() before EVP_PKEY_encapsulate() will mitigate\nthe issue.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3, 3.1 and 3.0 are affected by this issue."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group",
+        "severity": "LOW",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: An OpenSSL TLS 1.3 server may fail to negotiate the expected\npreferred key exchange group when its key exchange group configuration includes\nthe default by using the 'DEFAULT' keyword.\n\nImpact summary: A less preferred key exchange may be used even when a more\npreferred group is supported by both client and server, if the group\nwas not included among the client's initial predicated keyshares.\nThis will sometimes be the case with the new hybrid post-quantum groups,\nif the client chooses to defer their use until specifically requested by\nthe server.\n\nIf an OpenSSL TLS 1.3 server's configuration uses the 'DEFAULT' keyword to\ninterpolate the built-in default group list into its own configuration, perhaps\nadding or removing specific elements, then an implementation defect causes the\n'DEFAULT' list to lose its 'tuple' structure, and all server-supported groups\nwere treated as a single sufficiently secure 'tuple', with the server not\nsending a Hello Retry Request (HRR) even when a group in a more preferred tuple\nwas mutually supported.\n\nAs a result, the client and server might fail to negotiate a mutually supported\npost-quantum key agreement group, such as 'X25519MLKEM768', if the client's\nconfiguration results in only 'classical' groups (such as 'X25519' being the\nonly ones in the client's initial keyshare prediction).\n\nOpenSSL 3.5 and later support a new syntax for selecting the most preferred TLS\n1.3 key agreement group on TLS servers.  The old syntax had a single 'flat'\nlist of groups, and treated all the supported groups as sufficiently secure.\nIf any of the keyshares predicted by the client were supported by the server\nthe most preferred among these was selected, even if other groups supported by\nthe client, but not included in the list of predicted keyshares would have been\nmore preferred, if included.\n\nThe new syntax partitions the groups into distinct 'tuples' of roughly\nequivalent security.  Within each tuple the most preferred group included among\nthe client's predicted keyshares is chosen, but if the client supports a group\nfrom a more preferred tuple, but did not predict any corresponding keyshares,\nthe server will ask the client to retry the ClientHello (by issuing a Hello\nRetry Request or HRR) with the most preferred mutually supported group.\n\nThe above works as expected when the server's configuration uses the built-in\ndefault group list, or explicitly defines its own list by directly defining the\nvarious desired groups and group 'tuples'.\n\nNo OpenSSL FIPS modules are affected by this issue, the code in question lies\noutside the FIPS boundary.\n\nOpenSSL 3.6 and 3.5 are vulnerable to this issue.\n\nOpenSSL 3.6 users should upgrade to OpenSSL 3.6.2 once it is released.\nOpenSSL 3.5 users should upgrade to OpenSSL 3.5.6 once it is released.\n\nOpenSSL 3.4, 3.3, 3.0, 1.0.2 and 1.1.1 are not affected by this issue."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "Issue summary: An uncommon configuration of clients performing DANE TL ...",
+        "severity": "LOW",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: An uncommon configuration of clients performing DANE TLSA-based\nserver authentication, when paired with uncommon server DANE TLSA records, may\nresult in a use-after-free and/or double-free on the client side.\n\nImpact summary: A use after free can have a range of potential consequences\nsuch as the corruption of valid data, crashes or execution of arbitrary code.\n\nHowever, the issue only affects clients that make use of TLSA records with both\nthe PKIX-TA(0/PKIX-EE(1) certificate usages and the DANE-TA(2) certificate\nusage.\n\nBy far the most common deployment of DANE is in SMTP MTAs for which RFC7672\nrecommends that clients treat as 'unusable' any TLSA records that have the PKIX\ncertificate usages.  These SMTP (or other similar) clients are not vulnerable\nto this issue.  Conversely, any clients that support only the PKIX usages, and\nignore the DANE-TA(2) usage are also not vulnerable.\n\nThe client would also need to be communicating with a server that publishes a\nTLSA RRset with both types of TLSA records.\n\nNo FIPS modules are affected by this issue, the problem code is outside the\nFIPS module boundary."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "Issue summary: When a delta CRL that contains a Delta CRL Indicator ex ...",
+        "severity": "LOW",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: When a delta CRL that contains a Delta CRL Indicator extension\nis processed a NULL pointer dereference might happen if the required CRL\nNumber extension is missing.\n\nImpact summary: A NULL pointer dereference can trigger a crash which\nleads to a Denial of Service for an application.\n\nWhen CRL processing and delta CRL processing is enabled during X.509\ncertificate verification, the delta CRL processing does not check\nwhether the CRL Number extension is NULL before dereferencing it.\nWhen a malformed delta CRL file is being processed, this parameter\ncan be NULL, causing a NULL pointer dereference.\n\nExploiting this issue requires the X509_V_FLAG_USE_DELTAS flag to be enabled in\nthe verification context, the certificate being verified to contain a\nfreshestCRL extension or the base CRL to have the EXFLAG_FRESHEST flag set, and\nan attacker to provide a malformed CRL to an application that processes it.\n\nThe vulnerability is limited to Denial of Service and cannot be escalated to\nachieve code execution or memory disclosure. For that reason the issue was\nassessed as Low severity according to our Security Policy.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the affected code is outside the OpenSSL FIPS module boundary."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "Issue summary: During processing of a crafted CMS EnvelopedData messag ...",
+        "severity": "LOW",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: During processing of a crafted CMS EnvelopedData message\nwith KeyAgreeRecipientInfo a NULL pointer dereference can happen.\n\nImpact summary: Applications that process attacker-controlled CMS data may\ncrash before authentication or cryptographic operations occur resulting in\nDenial of Service.\n\nWhen a CMS EnvelopedData message that uses KeyAgreeRecipientInfo is\nprocessed, the optional parameters field of KeyEncryptionAlgorithmIdentifier\nis examined without checking for its presence. This results in a NULL\npointer dereference if the field is missing.\n\nApplications and services that call CMS_decrypt() on untrusted input\n(e.g., S/MIME processing or CMS-based protocols) are vulnerable.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "Issue summary: During processing of a crafted CMS EnvelopedData messag ...",
+        "severity": "LOW",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: During processing of a crafted CMS EnvelopedData message\nwith KeyTransportRecipientInfo a NULL pointer dereference can happen.\n\nImpact summary: Applications that process attacker-controlled CMS data may\ncrash before authentication or cryptographic operations occur resulting in\nDenial of Service.\n\nWhen a CMS EnvelopedData message that uses KeyTransportRecipientInfo with\nRSA-OAEP encryption is processed, the optional parameters field of\nRSA-OAEP SourceFunc algorithm identifier is examined without checking\nfor its presence. This results in a NULL pointer dereference if the field\nis missing.\n\nApplications and services that call CMS_decrypt() on untrusted input\n(e.g., S/MIME processing or CMS-based protocols) are vulnerable.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "Issue summary: Converting an excessively large OCTET STRING value to a ...",
+        "severity": "LOW",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: Converting an excessively large OCTET STRING value to\na hexadecimal string leads to a heap buffer overflow on 32 bit platforms.\n\nImpact summary: A heap buffer overflow may lead to a crash or possibly\nan attacker controlled code execution or other undefined behavior.\n\nIf an attacker can supply a crafted X.509 certificate with an excessively\nlarge OCTET STRING value in extensions such as the Subject Key Identifier\n(SKID) or Authority Key Identifier (AKID) which are being converted to hex,\nthe size of the buffer needed for the result is calculated as multiplication\nof the input length by 3. On 32 bit platforms, this multiplication may overflow\nresulting in the allocation of a smaller buffer and a heap buffer overflow.\n\nApplications and services that print or log contents of untrusted X.509\ncertificates are vulnerable to this issue. As the certificates would have\nto have sizes of over 1 Gigabyte, printing or logging such certificates\nis a fairly unlikely operation and only 32 bit platforms are affected,\nthis issue was assigned Low severity.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "systemd: systemd: Arbitrary code execution or Denial of Service via spurious IPC API call data",
+        "severity": "HIGH",
+        "recommendation": "No fixed version provided",
+        "description": "systemd, a system and service manager, (as PID 1) hits an assert and freezes execution when an unprivileged IPC API call is made with spurious data. On version v249 and older the effect is not an assert, but stack overwriting, with the attacker controlled content. From version v250 and newer this is not possible as the safety check causes an assert instead. This IPC call was added in v239, so versions older than that are not affected. Versions 260-rc1, 259.2, 258.5, and 257.11 contain patches. No known workarounds are available."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in systemd. The systemd-machined service contains an Improper Access Control vulnerability due to insufficient validation of the class parameter in the RegisterMachine D-Bus (Desktop Bus) method. A local unprivileged user can exploit this by attempting to register a machine with a specific class value, which may leave behind a usable, attacker-controlled machine object. This allows the attacker to invoke methods on the privileged object, leading to the execution of arbitrary commands with root privileges on the host system."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "systemd: TOCTOU race condition when updating file permissions and SELinux security contexts",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "systemd, when updating file permissions, allows local users to change the permissions and SELinux security contexts for arbitrary files via a symlink attack on unspecified files."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "An issue was discovered in systemd 253. An attacker can modify a seale ...",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "An issue was discovered in systemd 253. An attacker can modify a sealed log file such that, in some views, not all existing and sealed log messages are displayed. NOTE: the vendor reportedly sent \"a reply denying that any of the finding was a security vulnerability.\""
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "An issue was discovered in systemd 253. An attacker can truncate a sea ...",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "An issue was discovered in systemd 253. An attacker can truncate a sealed log file and then resume log sealing such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent \"a reply denying that any of the finding was a security vulnerability.\""
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "An issue was discovered in systemd 253. An attacker can modify the con ...",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "An issue was discovered in systemd 253. An attacker can modify the contents of past events in a sealed log file and then adjust the file such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent \"a reply denying that any of the finding was a security vulnerability.\""
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "[nspawn: escape-to-host via malformed optional config file]",
+        "severity": "UNKNOWN",
+        "recommendation": "No fixed version provided",
+        "description": ""
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "[udev: local root execution via malicious hardware devices and unsanitized kernel output]",
+        "severity": "UNKNOWN",
+        "recommendation": "No fixed version provided",
+        "description": ""
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libtasn1: libtasn1: Denial of Service via stack-based buffer overflow in asn1_expend_octet_string",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "Stack-based buffer overflow in libtasn1 version: v4.20.0. The function fails to validate the size of input data resulting in a buffer overflow in asn1_expend_octet_string."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libtiff: libtiff: Arbitrary code execution or denial of service via signed integer overflow in TIFF file processing",
+        "severity": "HIGH",
+        "recommendation": "4.7.0-3+deb13u2",
+        "description": "A flaw was found in the libtiff library. A remote attacker could exploit a signed integer overflow vulnerability in the putcontig8bitYCbCr44tile function by providing a specially crafted TIFF file. This flaw can lead to an out-of-bounds heap write due to incorrect memory pointer calculations, potentially causing a denial of service (application crash) or arbitrary code execution."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libtiff: Memory leaks in tif_open.c, tif_lzw.c, and tif_aux.c",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "LibTIFF 4.0.8 has multiple memory leak vulnerabilities, which allow attackers to cause a denial of service (memory consumption), as demonstrated by tif_open.c, tif_lzw.c, and tif_aux.c. NOTE: Third parties were unable to reproduce the issue"
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libtiff: NULL pointer dereference in the jpeg_fdct_16x16 function in jfdctint.c",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "ijg-libjpeg before 9d, as used in tiff2pdf (from LibTIFF) and other products, does not check for a NULL pointer at a certain place in jpeg_fdct_16x16 in jfdctint.c."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "tiff: Malicious file leads to a denial of service in TIFF File Handler",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A vulnerability classified as problematic was found in LibTIFF 4.3.0. Affected by this vulnerability is the TIFF File Handler of tiff2ps. Opening a malicious file leads to a denial of service. The attack can be launched remotely but requires user interaction. The exploit has been disclosed to the public and may be used."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libtiff: libtiff: Denial of Service via NULL pointer dereference in tif_open.c",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "libtiff up to v4.7.1 was discovered to contain a NULL pointer dereference via the component libtiff/tif_open.c."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libtiff: libtiff: Denial of Service via buffer overflow",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "libtiff up to v4.7.1 was discovered to contain a stack overflow via the readSeparateStripsIntoBuffer function."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libtiff: libtiff: Denial of service via double free in tiffcrop.c",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "libtiff up to v4.7.1 was discovered to contain a double free via the component tools/tiffcrop.c."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libtiff: LibTIFF Use-After-Free Vulnerability",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A vulnerability was found in LibTIFF up to 4.7.0. It has been declared as critical. This vulnerability affects the function get_histogram of the file tools/tiffmedian.c. The manipulation leads to use after free. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used. The patch is identified as fe10872e53efba9cc36c66ac4ab3b41a839d5172. It is recommended to apply a patch to fix this issue."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libtiff: LibTIFF Buffer Overflow",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A vulnerability was found in LibTIFF up to 4.7.0. It has been rated as critical. This issue affects the function setrow of the file tools/thumbnail.c. The manipulation leads to buffer overflow. An attack has to be approached locally. The patch is named e8c9d6c616b19438695fd829e58ae4fde5bfbc22. It is recommended to apply a patch to fix this issue. This vulnerability only affects products that are no longer supported by the maintainer."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libtiff: Libtiff Null Pointer Dereference Vulnerability",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A vulnerability classified as problematic was found in libtiff 4.6.0. This vulnerability affects the function PS_Lvl2page of the file tools/tiff2ps.c of the component tiff2ps. The manipulation leads to null pointer dereference. It is possible to launch the attack on the local host. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. The name of the patch is 6ba36f159fd396ad11bf6b7874554197736ecc8b. It is recommended to apply a patch to fix this issue. One of the maintainers explains, that \"[t]his error only occurs if DEFER_STRILE_LOAD (defer-strile-load:BOOL=ON) or TIFFOpen( .. \"rD\") option is used.\""
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "ncurses: ncurses: Buffer overflow vulnerability may lead to arbitrary code execution.",
+        "severity": "HIGH",
+        "recommendation": "No fixed version provided",
+        "description": "The infocmp command-line tool in ncurses before 6.5-20251213 has a stack-based buffer overflow in analyze_string in progs/infocmp.c."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "gnu-ncurses: ncurses Stack Buffer Overflow",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A vulnerability has been found in GNU ncurses up to 6.5-20250322 and classified as problematic. This vulnerability affects the function postprocess_termcap of the file tinfo/parse_entry.c. The manipulation leads to stack-based buffer overflow. The attack needs to be approached locally. Upgrading to version 6.5-20250329 is able to address this issue. It is recommended to upgrade the affected component."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "systemd: systemd: Arbitrary code execution or Denial of Service via spurious IPC API call data",
+        "severity": "HIGH",
+        "recommendation": "No fixed version provided",
+        "description": "systemd, a system and service manager, (as PID 1) hits an assert and freezes execution when an unprivileged IPC API call is made with spurious data. On version v249 and older the effect is not an assert, but stack overwriting, with the attacker controlled content. From version v250 and newer this is not possible as the safety check causes an assert instead. This IPC call was added in v239, so versions older than that are not affected. Versions 260-rc1, 259.2, 258.5, and 257.11 contain patches. No known workarounds are available."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "systemd: systemd: Privilege escalation via improper access control in RegisterMachine D-Bus method",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in systemd. The systemd-machined service contains an Improper Access Control vulnerability due to insufficient validation of the class parameter in the RegisterMachine D-Bus (Desktop Bus) method. A local unprivileged user can exploit this by attempting to register a machine with a specific class value, which may leave behind a usable, attacker-controlled machine object. This allows the attacker to invoke methods on the privileged object, leading to the execution of arbitrary commands with root privileges on the host system."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "systemd: TOCTOU race condition when updating file permissions and SELinux security contexts",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "systemd, when updating file permissions, allows local users to change the permissions and SELinux security contexts for arbitrary files via a symlink attack on unspecified files."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "An issue was discovered in systemd 253. An attacker can modify a seale ...",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "An issue was discovered in systemd 253. An attacker can modify a sealed log file such that, in some views, not all existing and sealed log messages are displayed. NOTE: the vendor reportedly sent \"a reply denying that any of the finding was a security vulnerability.\""
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "An issue was discovered in systemd 253. An attacker can truncate a sea ...",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "An issue was discovered in systemd 253. An attacker can truncate a sealed log file and then resume log sealing such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent \"a reply denying that any of the finding was a security vulnerability.\""
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "An issue was discovered in systemd 253. An attacker can modify the con ...",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "An issue was discovered in systemd 253. An attacker can modify the contents of past events in a sealed log file and then adjust the file such that checking the integrity shows no error, despite modifications. NOTE: the vendor reportedly sent \"a reply denying that any of the finding was a security vulnerability.\""
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "[nspawn: escape-to-host via malformed optional config file]",
+        "severity": "UNKNOWN",
+        "recommendation": "No fixed version provided",
+        "description": ""
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "[udev: local root execution via malicious hardware devices and unsanitized kernel output]",
+        "severity": "UNKNOWN",
+        "recommendation": "No fixed version provided",
+        "description": ""
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: TOCTOU in the mount program when setting up loop devices",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in util-linux. This vulnerability allows a heap buffer overread when processing 256-byte usernames, specifically within the `setpwnam()` function, affecting SUID (Set User ID) login-utils utilities writing to the password database."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: util-linux: Access control bypass due to improper hostname canonicalization",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libxml2: libxml2: Denial of Service via uncontrolled recursion in XML catalog processing",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in libxml2, an XML parsing library. This uncontrolled recursion vulnerability occurs in the xmlCatalogXMLResolveURI function when an XML catalog contains a delegate URI entry that references itself. A remote attacker could exploit this configuration-dependent issue by providing a specially crafted XML catalog, leading to infinite recursion and call stack exhaustion. This ultimately results in a segmentation fault, causing a Denial of Service (DoS) by crashing affected applications."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libxml2: libxml2: Uncontrolled Recursion Vulnerability",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A vulnerability was found in libxml2 up to 2.14.5. It has been declared as problematic. This vulnerability affects the function xmlParseSGMLCatalog of the component xmlcatalog. The manipulation leads to uncontrolled recursion. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The code maintainer explains, that \"[t]he issue can only be triggered with untrusted SGML catalogs and it makes absolutely no sense to use untrusted catalogs. I also doubt that anyone is still using SGML catalogs at all.\""
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libxml2: Unbounded RelaxNG Include Recursion Leading to Stack Overflow",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was identified in the RelaxNG parser of libxml2 related to how external schema inclusions are handled. The parser does not enforce a limit on inclusion depth when resolving nested <include> directives. Specially crafted or overly complex schemas can cause excessive recursion during parsing. This may lead to stack exhaustion and application crashes, creating a denial-of-service risk."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libxml2: libxml2: Denial of Service via crafted XML catalogs",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in the libxml2 library. This uncontrolled resource consumption vulnerability occurs when processing XML catalogs that contain repeated <nextCatalog> elements pointing to the same downstream catalog. A remote attacker can exploit this by supplying crafted catalogs, causing the parser to redundantly traverse catalog chains. This leads to excessive CPU consumption and degrades application availability, resulting in a denial-of-service condition."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libxml2: Memory Leak Leading to Local Denial of Service in xmllint Interactive Shell",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was identified in the interactive shell of the xmllint utility, part of the libxml2 project, where memory allocated for user input is not properly released under certain conditions. When a user submits input consisting only of whitespace, the program skips command execution but fails to free the allocated buffer. Repeating this action causes memory to continuously accumulate. Over time, this can exhaust system memory and terminate the xmllint process, creating a denial-of-service condition on the local system."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libxslt: use-after-free with key data stored cross-RVT",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "A use-after-free vulnerability was found in libxslt while parsing xsl nodes that may lead to the dereference of expired pointers and application crash."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libxslt: math.random() in xslt uses unseeded randomness",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "In libxslt 1.1.29 and earlier, the EXSLT math.random function was not initialized with a random seed during startup, which could cause usage of this function to produce predictable outputs."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "libxslt: Type Confusion in exsltFuncResultCompfunction of libxslt",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in the exsltFuncResultComp() function of libxslt, which handles EXSLT <func:result> elements during stylesheet parsing. Due to improper type handling, the function may treat an XML document node as a regular XML element node, resulting in a type confusion. This can cause unexpected memory reads and potential crashes. While difficult to exploit, the flaw could lead to application instability or denial of service."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: TOCTOU in the mount program when setting up loop devices",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in util-linux. This vulnerability allows a heap buffer overread when processing 256-byte usernames, specifically within the `setpwnam()` function, affecting SUID (Set User ID) login-utils utilities writing to the password database."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: util-linux: Access control bypass due to improper hostname canonicalization",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "initscripts in rPath Linux 1 sets insecure permissions for the /var/lo ...",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "initscripts in rPath Linux 1 sets insecure permissions for the /var/log/btmp file, which allows local users to obtain sensitive information regarding authentication attempts.  NOTE: because sshd detects the insecure permissions and does not log certain events, this also prevents sshd from logging failed authentication attempts by remote attackers."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "[more related to CVE-2005-4890]",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": ""
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: TOCTOU in the mount program when setting up loop devices",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in util-linux. This vulnerability allows a heap buffer overread when processing 256-byte usernames, specifically within the `setpwnam()` function, affecting SUID (Set User ID) login-utils utilities writing to the password database."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: util-linux: Access control bypass due to improper hostname canonicalization",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "ncurses: ncurses: Buffer overflow vulnerability may lead to arbitrary code execution.",
+        "severity": "HIGH",
+        "recommendation": "No fixed version provided",
+        "description": "The infocmp command-line tool in ncurses before 6.5-20251213 has a stack-based buffer overflow in analyze_string in progs/infocmp.c."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "gnu-ncurses: ncurses Stack Buffer Overflow",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A vulnerability has been found in GNU ncurses up to 6.5-20250322 and classified as problematic. This vulnerability affects the function postprocess_termcap of the file tinfo/parse_entry.c. The manipulation leads to stack-based buffer overflow. The attack needs to be approached locally. Upgrading to version 6.5-20250329 is able to address this issue. It is recommended to upgrade the affected component."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "ncurses: ncurses: Buffer overflow vulnerability may lead to arbitrary code execution.",
+        "severity": "HIGH",
+        "recommendation": "No fixed version provided",
+        "description": "The infocmp command-line tool in ncurses before 6.5-20251213 has a stack-based buffer overflow in analyze_string in progs/infocmp.c."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "gnu-ncurses: ncurses Stack Buffer Overflow",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A vulnerability has been found in GNU ncurses up to 6.5-20250322 and classified as problematic. This vulnerability affects the function postprocess_termcap of the file tinfo/parse_entry.c. The manipulation leads to stack-based buffer overflow. The attack needs to be approached locally. Upgrading to version 6.5-20250329 is able to address this issue. It is recommended to upgrade the affected component."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key",
+        "severity": "MEDIUM",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: Applications using RSASVE key encapsulation to establish\na secret encryption key can send contents of an uninitialized memory buffer to\na malicious peer.\n\nImpact summary: The uninitialized buffer might contain sensitive data from the\nprevious execution of the application process which leads to sensitive data\nleakage to an attacker.\n\nRSA_public_encrypt() returns the number of bytes written on success and -1\non error. The affected code tests only whether the return value is non-zero.\nAs a result, if RSA encryption fails, encapsulation can still return success to\nthe caller, set the output lengths, and leave the caller to use the contents of\nthe ciphertext buffer as if a valid KEM ciphertext had been produced.\n\nIf applications use EVP_PKEY_encapsulate() with RSA/RSASVE on an\nattacker-supplied invalid RSA public key without first validating that key,\nthen this may cause stale or uninitialized contents of the caller-provided\nciphertext buffer to be disclosed to the attacker in place of the KEM\nciphertext.\n\nAs a workaround calling EVP_PKEY_public_check() or\nEVP_PKEY_public_check_quick() before EVP_PKEY_encapsulate() will mitigate\nthe issue.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3, 3.1 and 3.0 are affected by this issue."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group",
+        "severity": "LOW",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: An OpenSSL TLS 1.3 server may fail to negotiate the expected\npreferred key exchange group when its key exchange group configuration includes\nthe default by using the 'DEFAULT' keyword.\n\nImpact summary: A less preferred key exchange may be used even when a more\npreferred group is supported by both client and server, if the group\nwas not included among the client's initial predicated keyshares.\nThis will sometimes be the case with the new hybrid post-quantum groups,\nif the client chooses to defer their use until specifically requested by\nthe server.\n\nIf an OpenSSL TLS 1.3 server's configuration uses the 'DEFAULT' keyword to\ninterpolate the built-in default group list into its own configuration, perhaps\nadding or removing specific elements, then an implementation defect causes the\n'DEFAULT' list to lose its 'tuple' structure, and all server-supported groups\nwere treated as a single sufficiently secure 'tuple', with the server not\nsending a Hello Retry Request (HRR) even when a group in a more preferred tuple\nwas mutually supported.\n\nAs a result, the client and server might fail to negotiate a mutually supported\npost-quantum key agreement group, such as 'X25519MLKEM768', if the client's\nconfiguration results in only 'classical' groups (such as 'X25519' being the\nonly ones in the client's initial keyshare prediction).\n\nOpenSSL 3.5 and later support a new syntax for selecting the most preferred TLS\n1.3 key agreement group on TLS servers.  The old syntax had a single 'flat'\nlist of groups, and treated all the supported groups as sufficiently secure.\nIf any of the keyshares predicted by the client were supported by the server\nthe most preferred among these was selected, even if other groups supported by\nthe client, but not included in the list of predicted keyshares would have been\nmore preferred, if included.\n\nThe new syntax partitions the groups into distinct 'tuples' of roughly\nequivalent security.  Within each tuple the most preferred group included among\nthe client's predicted keyshares is chosen, but if the client supports a group\nfrom a more preferred tuple, but did not predict any corresponding keyshares,\nthe server will ask the client to retry the ClientHello (by issuing a Hello\nRetry Request or HRR) with the most preferred mutually supported group.\n\nThe above works as expected when the server's configuration uses the built-in\ndefault group list, or explicitly defines its own list by directly defining the\nvarious desired groups and group 'tuples'.\n\nNo OpenSSL FIPS modules are affected by this issue, the code in question lies\noutside the FIPS boundary.\n\nOpenSSL 3.6 and 3.5 are vulnerable to this issue.\n\nOpenSSL 3.6 users should upgrade to OpenSSL 3.6.2 once it is released.\nOpenSSL 3.5 users should upgrade to OpenSSL 3.5.6 once it is released.\n\nOpenSSL 3.4, 3.3, 3.0, 1.0.2 and 1.1.1 are not affected by this issue."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "Issue summary: An uncommon configuration of clients performing DANE TL ...",
+        "severity": "LOW",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: An uncommon configuration of clients performing DANE TLSA-based\nserver authentication, when paired with uncommon server DANE TLSA records, may\nresult in a use-after-free and/or double-free on the client side.\n\nImpact summary: A use after free can have a range of potential consequences\nsuch as the corruption of valid data, crashes or execution of arbitrary code.\n\nHowever, the issue only affects clients that make use of TLSA records with both\nthe PKIX-TA(0/PKIX-EE(1) certificate usages and the DANE-TA(2) certificate\nusage.\n\nBy far the most common deployment of DANE is in SMTP MTAs for which RFC7672\nrecommends that clients treat as 'unusable' any TLSA records that have the PKIX\ncertificate usages.  These SMTP (or other similar) clients are not vulnerable\nto this issue.  Conversely, any clients that support only the PKIX usages, and\nignore the DANE-TA(2) usage are also not vulnerable.\n\nThe client would also need to be communicating with a server that publishes a\nTLSA RRset with both types of TLSA records.\n\nNo FIPS modules are affected by this issue, the problem code is outside the\nFIPS module boundary."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "Issue summary: When a delta CRL that contains a Delta CRL Indicator ex ...",
+        "severity": "LOW",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: When a delta CRL that contains a Delta CRL Indicator extension\nis processed a NULL pointer dereference might happen if the required CRL\nNumber extension is missing.\n\nImpact summary: A NULL pointer dereference can trigger a crash which\nleads to a Denial of Service for an application.\n\nWhen CRL processing and delta CRL processing is enabled during X.509\ncertificate verification, the delta CRL processing does not check\nwhether the CRL Number extension is NULL before dereferencing it.\nWhen a malformed delta CRL file is being processed, this parameter\ncan be NULL, causing a NULL pointer dereference.\n\nExploiting this issue requires the X509_V_FLAG_USE_DELTAS flag to be enabled in\nthe verification context, the certificate being verified to contain a\nfreshestCRL extension or the base CRL to have the EXFLAG_FRESHEST flag set, and\nan attacker to provide a malformed CRL to an application that processes it.\n\nThe vulnerability is limited to Denial of Service and cannot be escalated to\nachieve code execution or memory disclosure. For that reason the issue was\nassessed as Low severity according to our Security Policy.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the affected code is outside the OpenSSL FIPS module boundary."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "Issue summary: During processing of a crafted CMS EnvelopedData messag ...",
+        "severity": "LOW",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: During processing of a crafted CMS EnvelopedData message\nwith KeyAgreeRecipientInfo a NULL pointer dereference can happen.\n\nImpact summary: Applications that process attacker-controlled CMS data may\ncrash before authentication or cryptographic operations occur resulting in\nDenial of Service.\n\nWhen a CMS EnvelopedData message that uses KeyAgreeRecipientInfo is\nprocessed, the optional parameters field of KeyEncryptionAlgorithmIdentifier\nis examined without checking for its presence. This results in a NULL\npointer dereference if the field is missing.\n\nApplications and services that call CMS_decrypt() on untrusted input\n(e.g., S/MIME processing or CMS-based protocols) are vulnerable.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "Issue summary: During processing of a crafted CMS EnvelopedData messag ...",
+        "severity": "LOW",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: During processing of a crafted CMS EnvelopedData message\nwith KeyTransportRecipientInfo a NULL pointer dereference can happen.\n\nImpact summary: Applications that process attacker-controlled CMS data may\ncrash before authentication or cryptographic operations occur resulting in\nDenial of Service.\n\nWhen a CMS EnvelopedData message that uses KeyTransportRecipientInfo with\nRSA-OAEP encryption is processed, the optional parameters field of\nRSA-OAEP SourceFunc algorithm identifier is examined without checking\nfor its presence. This results in a NULL pointer dereference if the field\nis missing.\n\nApplications and services that call CMS_decrypt() on untrusted input\n(e.g., S/MIME processing or CMS-based protocols) are vulnerable.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "Issue summary: Converting an excessively large OCTET STRING value to a ...",
+        "severity": "LOW",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: Converting an excessively large OCTET STRING value to\na hexadecimal string leads to a heap buffer overflow on 32 bit platforms.\n\nImpact summary: A heap buffer overflow may lead to a crash or possibly\nan attacker controlled code execution or other undefined behavior.\n\nIf an attacker can supply a crafted X.509 certificate with an excessively\nlarge OCTET STRING value in extensions such as the Subject Key Identifier\n(SKID) or Authority Key Identifier (AKID) which are being converted to hex,\nthe size of the buffer needed for the result is calculated as multiplication\nof the input length by 3. On 32 bit platforms, this multiplication may overflow\nresulting in the allocation of a smaller buffer and a heap buffer overflow.\n\nApplications and services that print or log contents of untrusted X.509\ncertificates are vulnerable to this issue. As the certificates would have\nto have sizes of over 1 Gigabyte, printing or logging such certificates\nis a fairly unlikely operation and only 32 bit platforms are affected,\nthis issue was assigned Low severity.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "openssl: openssl: Information Disclosure from Uninitialized Memory via Invalid RSA Public Key",
+        "severity": "MEDIUM",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: Applications using RSASVE key encapsulation to establish\na secret encryption key can send contents of an uninitialized memory buffer to\na malicious peer.\n\nImpact summary: The uninitialized buffer might contain sensitive data from the\nprevious execution of the application process which leads to sensitive data\nleakage to an attacker.\n\nRSA_public_encrypt() returns the number of bytes written on success and -1\non error. The affected code tests only whether the return value is non-zero.\nAs a result, if RSA encryption fails, encapsulation can still return success to\nthe caller, set the output lengths, and leave the caller to use the contents of\nthe ciphertext buffer as if a valid KEM ciphertext had been produced.\n\nIf applications use EVP_PKEY_encapsulate() with RSA/RSASVE on an\nattacker-supplied invalid RSA public key without first validating that key,\nthen this may cause stale or uninitialized contents of the caller-provided\nciphertext buffer to be disclosed to the attacker in place of the KEM\nciphertext.\n\nAs a workaround calling EVP_PKEY_public_check() or\nEVP_PKEY_public_check_quick() before EVP_PKEY_encapsulate() will mitigate\nthe issue.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3, 3.1 and 3.0 are affected by this issue."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "openssl: OpenSSL TLS 1.3 server may choose unexpected key agreement group",
+        "severity": "LOW",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: An OpenSSL TLS 1.3 server may fail to negotiate the expected\npreferred key exchange group when its key exchange group configuration includes\nthe default by using the 'DEFAULT' keyword.\n\nImpact summary: A less preferred key exchange may be used even when a more\npreferred group is supported by both client and server, if the group\nwas not included among the client's initial predicated keyshares.\nThis will sometimes be the case with the new hybrid post-quantum groups,\nif the client chooses to defer their use until specifically requested by\nthe server.\n\nIf an OpenSSL TLS 1.3 server's configuration uses the 'DEFAULT' keyword to\ninterpolate the built-in default group list into its own configuration, perhaps\nadding or removing specific elements, then an implementation defect causes the\n'DEFAULT' list to lose its 'tuple' structure, and all server-supported groups\nwere treated as a single sufficiently secure 'tuple', with the server not\nsending a Hello Retry Request (HRR) even when a group in a more preferred tuple\nwas mutually supported.\n\nAs a result, the client and server might fail to negotiate a mutually supported\npost-quantum key agreement group, such as 'X25519MLKEM768', if the client's\nconfiguration results in only 'classical' groups (such as 'X25519' being the\nonly ones in the client's initial keyshare prediction).\n\nOpenSSL 3.5 and later support a new syntax for selecting the most preferred TLS\n1.3 key agreement group on TLS servers.  The old syntax had a single 'flat'\nlist of groups, and treated all the supported groups as sufficiently secure.\nIf any of the keyshares predicted by the client were supported by the server\nthe most preferred among these was selected, even if other groups supported by\nthe client, but not included in the list of predicted keyshares would have been\nmore preferred, if included.\n\nThe new syntax partitions the groups into distinct 'tuples' of roughly\nequivalent security.  Within each tuple the most preferred group included among\nthe client's predicted keyshares is chosen, but if the client supports a group\nfrom a more preferred tuple, but did not predict any corresponding keyshares,\nthe server will ask the client to retry the ClientHello (by issuing a Hello\nRetry Request or HRR) with the most preferred mutually supported group.\n\nThe above works as expected when the server's configuration uses the built-in\ndefault group list, or explicitly defines its own list by directly defining the\nvarious desired groups and group 'tuples'.\n\nNo OpenSSL FIPS modules are affected by this issue, the code in question lies\noutside the FIPS boundary.\n\nOpenSSL 3.6 and 3.5 are vulnerable to this issue.\n\nOpenSSL 3.6 users should upgrade to OpenSSL 3.6.2 once it is released.\nOpenSSL 3.5 users should upgrade to OpenSSL 3.5.6 once it is released.\n\nOpenSSL 3.4, 3.3, 3.0, 1.0.2 and 1.1.1 are not affected by this issue."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "Issue summary: An uncommon configuration of clients performing DANE TL ...",
+        "severity": "LOW",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: An uncommon configuration of clients performing DANE TLSA-based\nserver authentication, when paired with uncommon server DANE TLSA records, may\nresult in a use-after-free and/or double-free on the client side.\n\nImpact summary: A use after free can have a range of potential consequences\nsuch as the corruption of valid data, crashes or execution of arbitrary code.\n\nHowever, the issue only affects clients that make use of TLSA records with both\nthe PKIX-TA(0/PKIX-EE(1) certificate usages and the DANE-TA(2) certificate\nusage.\n\nBy far the most common deployment of DANE is in SMTP MTAs for which RFC7672\nrecommends that clients treat as 'unusable' any TLSA records that have the PKIX\ncertificate usages.  These SMTP (or other similar) clients are not vulnerable\nto this issue.  Conversely, any clients that support only the PKIX usages, and\nignore the DANE-TA(2) usage are also not vulnerable.\n\nThe client would also need to be communicating with a server that publishes a\nTLSA RRset with both types of TLSA records.\n\nNo FIPS modules are affected by this issue, the problem code is outside the\nFIPS module boundary."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "Issue summary: When a delta CRL that contains a Delta CRL Indicator ex ...",
+        "severity": "LOW",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: When a delta CRL that contains a Delta CRL Indicator extension\nis processed a NULL pointer dereference might happen if the required CRL\nNumber extension is missing.\n\nImpact summary: A NULL pointer dereference can trigger a crash which\nleads to a Denial of Service for an application.\n\nWhen CRL processing and delta CRL processing is enabled during X.509\ncertificate verification, the delta CRL processing does not check\nwhether the CRL Number extension is NULL before dereferencing it.\nWhen a malformed delta CRL file is being processed, this parameter\ncan be NULL, causing a NULL pointer dereference.\n\nExploiting this issue requires the X509_V_FLAG_USE_DELTAS flag to be enabled in\nthe verification context, the certificate being verified to contain a\nfreshestCRL extension or the base CRL to have the EXFLAG_FRESHEST flag set, and\nan attacker to provide a malformed CRL to an application that processes it.\n\nThe vulnerability is limited to Denial of Service and cannot be escalated to\nachieve code execution or memory disclosure. For that reason the issue was\nassessed as Low severity according to our Security Policy.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the affected code is outside the OpenSSL FIPS module boundary."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "Issue summary: During processing of a crafted CMS EnvelopedData messag ...",
+        "severity": "LOW",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: During processing of a crafted CMS EnvelopedData message\nwith KeyAgreeRecipientInfo a NULL pointer dereference can happen.\n\nImpact summary: Applications that process attacker-controlled CMS data may\ncrash before authentication or cryptographic operations occur resulting in\nDenial of Service.\n\nWhen a CMS EnvelopedData message that uses KeyAgreeRecipientInfo is\nprocessed, the optional parameters field of KeyEncryptionAlgorithmIdentifier\nis examined without checking for its presence. This results in a NULL\npointer dereference if the field is missing.\n\nApplications and services that call CMS_decrypt() on untrusted input\n(e.g., S/MIME processing or CMS-based protocols) are vulnerable.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "Issue summary: During processing of a crafted CMS EnvelopedData messag ...",
+        "severity": "LOW",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: During processing of a crafted CMS EnvelopedData message\nwith KeyTransportRecipientInfo a NULL pointer dereference can happen.\n\nImpact summary: Applications that process attacker-controlled CMS data may\ncrash before authentication or cryptographic operations occur resulting in\nDenial of Service.\n\nWhen a CMS EnvelopedData message that uses KeyTransportRecipientInfo with\nRSA-OAEP encryption is processed, the optional parameters field of\nRSA-OAEP SourceFunc algorithm identifier is examined without checking\nfor its presence. This results in a NULL pointer dereference if the field\nis missing.\n\nApplications and services that call CMS_decrypt() on untrusted input\n(e.g., S/MIME processing or CMS-based protocols) are vulnerable.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "Issue summary: Converting an excessively large OCTET STRING value to a ...",
+        "severity": "LOW",
+        "recommendation": "3.5.5-1~deb13u2",
+        "description": "Issue summary: Converting an excessively large OCTET STRING value to\na hexadecimal string leads to a heap buffer overflow on 32 bit platforms.\n\nImpact summary: A heap buffer overflow may lead to a crash or possibly\nan attacker controlled code execution or other undefined behavior.\n\nIf an attacker can supply a crafted X.509 certificate with an excessively\nlarge OCTET STRING value in extensions such as the Subject Key Identifier\n(SKID) or Authority Key Identifier (AKID) which are being converted to hex,\nthe size of the buffer needed for the result is calculated as multiplication\nof the input length by 3. On 32 bit platforms, this multiplication may overflow\nresulting in the allocation of a smaller buffer and a heap buffer overflow.\n\nApplications and services that print or log contents of untrusted X.509\ncertificates are vulnerable to this issue. As the certificates would have\nto have sizes of over 1 Gigabyte, printing or logging such certificates\nis a fairly unlikely operation and only 32 bit platforms are affected,\nthis issue was assigned Low severity.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "initscripts in rPath Linux 1 sets insecure permissions for the /var/lo ...",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "initscripts in rPath Linux 1 sets insecure permissions for the /var/log/btmp file, which allows local users to obtain sensitive information regarding authentication attempts.  NOTE: because sshd detects the insecure permissions and does not log certain events, this also prevents sshd from logging failed authentication attempts by remote attackers."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "shadow-utils (aka shadow) 4.4 through 4.17.0 establishes a default /etc/subuid behavior (e.g., uid 100000 through 165535 for the first user account) that can realistically conflict with the uids of users defined on locally administered networks, potentially leading to account takeover, e.g., by leveraging newuidmap for access to an NFS home directory (or same-host resources in the case of remote logins by these local network users). NOTE: it may also be argued that system administrators should not have assigned uids, within local networks, that are within the range that can occur in /etc/subuid."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "[more related to CVE-2005-4890]",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": ""
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "perl: File:: Temp insecure temporary file handling",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "_is_safe in the File::Temp module for Perl does not properly handle symlinks."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "[sysvinit: no-root option in expert installer exposes locally exploitable security flaw]",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": ""
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "tar: tar: Hidden file injection via crafted archives",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in tar. A remote attacker could exploit this vulnerability by crafting a malicious archive, leading to hidden file injection with fully attacker-controlled content. This bypasses pre-extraction inspection mechanisms, potentially allowing an attacker to introduce malicious files onto a system without detection."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "tar: does not properly warn the user when extracting setuid or setgid files",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "Tar 1.15.1 does not properly warn the user when extracting setuid or setgid files, which may allow local users or remote attackers to gain privileges."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "[tar's rmt command may have undesired side effects]",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": ""
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: TOCTOU in the mount program when setting up loop devices",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "util-linux is a random collection of Linux utilities. Prior to version 2.41.4, a TOCTOU (Time-of-Check-Time-of-Use) vulnerability has been identified in the SUID binary /usr/bin/mount from util-linux. The mount binary, when setting up loop devices, validates the source file path with user privileges via fork() + setuid() + realpath(), but subsequently re-canonicalizes and opens it with root privileges (euid=0) without verifying that the path has not been replaced between both operations. Neither O_NOFOLLOW, nor inode comparison, nor post-open fstat() are employed. This allows a local unprivileged user to replace the source file with a symlink pointing to any root-owned file or device during the race window, causing the SUID binary to open and mount it as root. Exploitation requires an /etc/fstab entry with user,loop options whose path points to a directory where the attacker has write permission, and that /usr/bin/mount has the SUID bit set (the default configuration on virtually all Linux distributions). The impact is unauthorized read access to root-protected files and block devices, including backup images, disk volumes, and any file containing a valid filesystem. This issue has been patched in version 2.41.4."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in the util-linux chfn and chsh utilities when compiled with Readline support. The Readline library uses an \"INPUTRC\" environment variable to get a path to the library config file. When the library cannot parse the specified file, it prints an error message containing data from the file. This flaw allows an unprivileged user to read root-owned files, potentially leading to privilege escalation. This flaw affects util-linux versions prior to 2.37.4."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in util-linux. This vulnerability allows a heap buffer overread when processing 256-byte usernames, specifically within the `setpwnam()` function, affecting SUID (Set User ID) login-utils utilities writing to the password database."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "util-linux: util-linux: Access control bypass due to improper hostname canonicalization",
+        "severity": "LOW",
+        "recommendation": "No fixed version provided",
+        "description": "A flaw was found in util-linux. Improper hostname canonicalization in the `login(1)` utility, when invoked with the `-h` option, can modify the supplied remote hostname before setting `PAM_RHOST`. A remote attacker could exploit this by providing a specially crafted hostname, potentially bypassing host-based Pluggable Authentication Modules (PAM) access control rules that rely on fully qualified domain names. This could lead to unauthorized access."
+    },
+    {
+        "service": "Docker",
+        "resource": "nginx:latest (debian 13.4)",
+        "issue": "zlib: zlib: Denial of Service via infinite loop in CRC32 combine functions",
+        "severity": "MEDIUM",
+        "recommendation": "No fixed version provided",
+        "description": "zlib before 1.3.2 allows CPU consumption via crc32_combine64 and crc32_combine_gen64 because x2nmodp can do right shifts within a loop that has no termination condition."
+    }
+]

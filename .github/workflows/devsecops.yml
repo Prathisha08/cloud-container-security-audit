@@ -1,0 +1,46 @@
+name: DevSecOps Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  id-token: write
+  contents: read
+
+env:
+  AWS_REGION: ap-south-1
+  ECR_REPOSITORY: cloud-audit-tool
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::206204552347:role/github-actions-role
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Login to ECR
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build Image
+        run: docker build -t app .
+
+      - name: Tag Image
+        run: docker tag app:latest 206204552347.dkr.ecr.ap-south-1.amazonaws.com/cloud-audit-tool:latest
+
+      - name: Trivy Scan
+        uses: aquasecurity/trivy-action@0.28.0
+        with:
+          image-ref: 206204552347.dkr.ecr.ap-south-1.amazonaws.com/cloud-audit-tool:latest
+          severity: CRITICAL,HIGH
+          exit-code: 1
+
+      - name: Push Image
+        run: docker push 206204552347.dkr.ecr.ap-south-1.amazonaws.com/cloud-audit-tool:latest

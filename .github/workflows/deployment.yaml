@@ -15,6 +15,7 @@ spec:
       containers:
         - name: cloud-audit-tool
           image: 206204552347.dkr.ecr.ap-south-1.amazonaws.com/cloud-audit-tool:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8000
 ---
@@ -29,4 +30,4 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 8000
-  type: NodePort
+  type: LoadBalancer

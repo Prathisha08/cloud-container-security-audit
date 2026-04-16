@@ -11,7 +11,6 @@ permissions:
 
 env:
   AWS_REGION: ap-south-1
-  ECR_REPOSITORY: cloud-audit-tool
   IMAGE_URI: 206204552347.dkr.ecr.ap-south-1.amazonaws.com/cloud-audit-tool:latest
 
 jobs:
@@ -51,4 +50,6 @@ jobs:
         uses: sigstore/cosign-installer@v4.0.0
 
       - name: Sign Image with Cosign
-        run: cosign sign --yes $IMAGE_URI
+        run: |
+          DIGEST=$(docker inspect --format='{{index .RepoDigests 0}}' $IMAGE_URI)
+          cosign sign --yes $DIGEST

@@ -4,7 +4,7 @@ HIGH_RISK_PORTS = [22, 3389]
 WEB_PORTS = [80, 443]
 
 def check_open_security_groups():
-    ec2 = boto3.client("ec2")
+    ec2 = boto3.client("ec2", region_name="ap-south-1")
     findings = []
 
     response = ec2.describe_security_groups()

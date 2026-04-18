@@ -16,6 +16,20 @@ from alerts.alert_manager import print_alerts
 from alerts.email_alert import send_email_alert
 
 
+def safe_run(func):
+    try:
+        return func()
+    except Exception as e:
+        return [{
+            "service": "Internal",
+            "resource": func.__name__,
+            "resource_name": func.__name__,
+            "issue": f"Check failed: {str(e)}",
+            "severity": "High",
+            "recommendation": "Check AWS permissions or function logic."
+        }]
+
+
 def main():
     parser = argparse.ArgumentParser(description="AWS Security Audit Tool")
 
@@ -27,13 +41,13 @@ def main():
     parser.add_argument(
         "--image",
         nargs="+",
-        help="One or more Docker images to scan",
-        default=["nginx:latest"]
+        default=["nginx:latest"],
+        help="Docker images to scan"
     )
 
     parser.add_argument(
         "--repo",
-        help="ECR repository name for ECR scan"
+        help="ECR repository name"
     )
 
     args = parser.parse_args()
@@ -42,49 +56,84 @@ def main():
 
     print("Running Security Audit...\n")
 
+    # ---------------- SERVICE MODE ---------------- #
+
     if args.service == "ec2":
-        findings.extend(check_open_security_groups())
+        findings.extend(safe_run(check_open_security_groups))
 
     elif args.service == "s3":
-        findings.extend(check_s3_encryption())
-        findings.extend(check_s3_public_access_block())
+        findings.extend(safe_run(check_s3_encryption))
+        findings.extend(safe_run(check_s3_public_access_block))
 
     elif args.service == "iam":
-        findings.extend(check_iam_mfa())
-        findings.extend(check_iam_password_policy())
+        findings.extend(safe_run(check_iam_mfa))
+        findings.extend(safe_run(check_iam_password_policy))
 
     elif args.service == "cloudtrail":
-        findings.extend(check_cloudtrail_enabled())
+        findings.extend(safe_run(check_cloudtrail_enabled))
 
     elif args.service == "config":
-        findings.extend(check_config_enabled())
+        findings.extend(safe_run(check_config_enabled))
 
     elif args.service == "docker":
         for image in args.image:
             print(f"Scanning Docker image: {image}")
-            findings.extend(scan_docker_image(image))
+            try:
+                findings.extend(scan_docker_image(image))
+            except Exception as e:
+                findings.append({
+                    "service": "Docker",
+                    "resource": image,
+                    "resource_name": image,
+                    "issue": f"Scan failed: {str(e)}",
+                    "severity": "Medium",
+                    "recommendation": "Check Docker image or scanner."
+                })
 
     elif args.service == "ecr":
         if not args.repo:
-            print("Please provide --repo for ECR scan")
+            print("❌ Provide --repo for ECR scan")
             return
 
         print(f"Scanning ECR repository: {args.repo}")
-        findings.extend(scan_ecr_repository(args.repo))
+        try:
+            findings.extend(scan_ecr_repository(args.repo))
+        except Exception as e:
+            findings.append({
+                "service": "ECR",
+                "resource": args.repo,
+                "resource_name": args.repo,
+                "issue": f"ECR scan failed: {str(e)}",
+                "severity": "High",
+                "recommendation": "Check AWS permissions."
+            })
+
+    # ---------------- FULL SCAN ---------------- #
 
     else:
-        findings.extend(check_open_security_groups())
-        findings.extend(check_s3_encryption())
-        findings.extend(check_s3_public_access_block())
-        findings.extend(check_iam_mfa())
-        findings.extend(check_iam_password_policy())
-        findings.extend(check_cloudtrail_enabled())
-        findings.extend(check_config_enabled())
+        findings.extend(safe_run(check_open_security_groups))
+        findings.extend(safe_run(check_s3_encryption))
+        findings.extend(safe_run(check_s3_public_access_block))
+        findings.extend(safe_run(check_iam_mfa))
+        findings.extend(safe_run(check_iam_password_policy))
+        findings.extend(safe_run(check_cloudtrail_enabled))
+        findings.extend(safe_run(check_config_enabled))
 
         print("\nRunning Docker scans...")
         for image in args.image:
-            print(f"Scanning Docker image: {image}")
-            findings.extend(scan_docker_image(image))
+            try:
+                findings.extend(scan_docker_image(image))
+            except Exception as e:
+                findings.append({
+                    "service": "Docker",
+                    "resource": image,
+                    "resource_name": image,
+                    "issue": f"Docker scan failed: {str(e)}",
+                    "severity": "Medium",
+                    "recommendation": "Check Docker scan setup."
+                })
+
+    # ---------------- OUTPUT ---------------- #
 
     print("\n=== Results ===")
     print(f"Total Findings: {len(findings)}")
@@ -100,6 +149,8 @@ def main():
         print(f"{sev}: {count}")
 
     print_alerts(findings)
+
+    # ---------------- EMAIL ALERT ---------------- #
 
     smtp_server = os.getenv("SMTP_SERVER")
     smtp_port = os.getenv("SMTP_PORT")
@@ -117,7 +168,7 @@ def main():
             recipient_email=recipient_email
         )
     else:
-        print("Email alert settings not configured. Skipping email alerts.")
+        print("Email alert not configured. Skipping.")
 
     save_report(findings)
 

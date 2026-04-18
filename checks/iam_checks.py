@@ -1,107 +1,98 @@
 import boto3
-from botocore.exceptions import ClientError
 
 def check_iam_mfa():
-    iam = boto3.client("iam")
-    findings = []
+    try:
+        iam = boto3.client("iam", region_name="ap-south-1")
+        summary = iam.get_account_summary()["SummaryMap"]
+        mfa_enabled = summary.get("AccountMFAEnabled", 0)
 
-    response = iam.list_users()
-    users = response.get("Users", [])
-
-    for user in users:
-        username = user["UserName"]
-        mfa_devices = iam.list_mfa_devices(UserName=username).get("MFADevices", [])
-
-        if not mfa_devices:
-            findings.append({
+        if mfa_enabled:
+            return [{
                 "service": "IAM",
-                "resource": username,
-                "resource_name": username,
-                "issue": "IAM user does not have MFA enabled",
-                "severity": "Medium",
-                "recommendation": "Enable MFA for this IAM user."
-            })
+                "resource": "Root Account",
+                "resource_name": "AWS Account",
+                "issue": "Root account MFA is enabled.",
+                "severity": "Low",
+                "recommendation": "No action needed."
+            }]
 
-    return findings
+        return [{
+            "service": "IAM",
+            "resource": "Root Account",
+            "resource_name": "AWS Account",
+            "issue": "Root account MFA is NOT enabled.",
+            "severity": "Critical",
+            "recommendation": "Enable MFA on the root account immediately."
+        }]
+
+    except Exception as e:
+        return [{
+            "service": "IAM",
+            "resource": "AWS API",
+            "resource_name": "IAM",
+            "issue": f"AWS access failed: {str(e)}",
+            "severity": "High",
+            "recommendation": "Check IAM permissions or pod credentials."
+        }]
 
 
 def check_iam_password_policy():
-    iam = boto3.client("iam")
-    findings = []
-
     try:
+        iam = boto3.client("iam", region_name="ap-south-1")
         policy = iam.get_account_password_policy()["PasswordPolicy"]
 
+        issues = []
+
         if policy.get("MinimumPasswordLength", 0) < 8:
-            findings.append({
-                "service": "IAM",
-                "resource": "Account",
-                "resource_name": "PasswordPolicy",
-                "issue": "Password policy minimum length is less than 8",
-                "severity": "Medium",
-                "recommendation": "Set minimum password length to at least 8."
-            })
+            issues.append("Minimum password length is less than 8")
 
         if not policy.get("RequireSymbols", False):
-            findings.append({
-                "service": "IAM",
-                "resource": "Account",
-                "resource_name": "PasswordPolicy",
-                "issue": "Password policy does not require symbols",
-                "severity": "Medium",
-                "recommendation": "Require at least one symbol in passwords."
-            })
+            issues.append("Password policy does not require symbols")
 
         if not policy.get("RequireNumbers", False):
-            findings.append({
-                "service": "IAM",
-                "resource": "Account",
-                "resource_name": "PasswordPolicy",
-                "issue": "Password policy does not require numbers",
-                "severity": "Medium",
-                "recommendation": "Require at least one number in passwords."
-            })
+            issues.append("Password policy does not require numbers")
 
         if not policy.get("RequireUppercaseCharacters", False):
-            findings.append({
-                "service": "IAM",
-                "resource": "Account",
-                "resource_name": "PasswordPolicy",
-                "issue": "Password policy does not require uppercase characters",
-                "severity": "Medium",
-                "recommendation": "Require uppercase letters in passwords."
-            })
+            issues.append("Password policy does not require uppercase letters")
 
         if not policy.get("RequireLowercaseCharacters", False):
-            findings.append({
+            issues.append("Password policy does not require lowercase letters")
+
+        if issues:
+            return [{
                 "service": "IAM",
-                "resource": "Account",
-                "resource_name": "PasswordPolicy",
-                "issue": "Password policy does not require lowercase characters",
+                "resource": "Password Policy",
+                "resource_name": "Account Password Policy",
+                "issue": ", ".join(issues),
                 "severity": "Medium",
-                "recommendation": "Require lowercase letters in passwords."
-            })
+                "recommendation": "Update IAM password policy to enforce strong passwords."
+            }]
 
-    except ClientError as e:
-        error_code = e.response["Error"]["Code"]
+        return [{
+            "service": "IAM",
+            "resource": "Password Policy",
+            "resource_name": "Account Password Policy",
+            "issue": "Password policy is strong.",
+            "severity": "Low",
+            "recommendation": "No action needed."
+        }]
 
-        if error_code == "NoSuchEntity":
-            findings.append({
-                "service": "IAM",
-                "resource": "Account",
-                "resource_name": "PasswordPolicy",
-                "issue": "No IAM account password policy is configured",
-                "severity": "High",
-                "recommendation": "Configure a strong IAM password policy."
-            })
-        else:
-            findings.append({
-                "service": "IAM",
-                "resource": "Account",
-                "resource_name": "PasswordPolicy",
-                "issue": f"Could not verify password policy: {error_code}",
-                "severity": "Medium",
-                "recommendation": "Review IAM password policy settings."
-            })
+    except iam.exceptions.NoSuchEntityException:
+        return [{
+            "service": "IAM",
+            "resource": "Password Policy",
+            "resource_name": "Account Password Policy",
+            "issue": "No password policy is set.",
+            "severity": "High",
+            "recommendation": "Set a strong IAM password policy."
+        }]
 
-    return findings
+    except Exception as e:
+        return [{
+            "service": "IAM",
+            "resource": "AWS API",
+            "resource_name": "IAM",
+            "issue": f"AWS access failed: {str(e)}",
+            "severity": "High",
+            "recommendation": "Check IAM permissions or pod credentials."
+        }]

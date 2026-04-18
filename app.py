@@ -16,31 +16,79 @@ st.set_page_config(page_title="Cloud Security Dashboard", layout="wide")
 st.title("CloudSec + DevSecOps Dashboard")
 st.write("AWS + Docker Security Auditing Tool")
 
-
-# ---------------- FIX: session state ---------------- #
-
 if "findings" not in st.session_state:
     st.session_state.findings = None
+
+
+def safe_run(func):
+    try:
+        result = func()
+        if result is None:
+            return []
+        if isinstance(result, list):
+            return result
+        return [{
+            "service": "Internal",
+            "resource": func.__name__,
+            "resource_name": func.__name__,
+            "issue": f"Check returned invalid type: {type(result).__name__}",
+            "severity": "High",
+            "recommendation": "Ensure every check function returns a list of findings."
+        }]
+    except Exception as e:
+        return [{
+            "service": "Internal",
+            "resource": func.__name__,
+            "resource_name": func.__name__,
+            "issue": f"Check failed: {str(e)}",
+            "severity": "High",
+            "recommendation": "Check AWS permissions or function logic."
+        }]
 
 
 def run_all_checks(images):
     findings = []
 
-    findings.extend(check_open_security_groups())
-    findings.extend(check_s3_encryption())
-    findings.extend(check_s3_public_access_block())
-    findings.extend(check_iam_mfa())
-    findings.extend(check_iam_password_policy())
-    findings.extend(check_cloudtrail_enabled())
-    findings.extend(check_config_enabled())
+    check_functions = [
+        check_open_security_groups,
+        check_s3_encryption,
+        check_s3_public_access_block,
+        check_iam_mfa,
+        check_iam_password_policy,
+        check_cloudtrail_enabled,
+        check_config_enabled,
+    ]
+
+    for func in check_functions:
+        findings.extend(safe_run(func))
 
     for image in images:
-        findings.extend(scan_docker_image(image))
+        try:
+            docker_result = scan_docker_image(image)
+            if docker_result is None:
+                docker_result = []
+            elif not isinstance(docker_result, list):
+                docker_result = [{
+                    "service": "Docker",
+                    "resource": image,
+                    "resource_name": image,
+                    "issue": f"Docker scan returned invalid type: {type(docker_result).__name__}",
+                    "severity": "Medium",
+                    "recommendation": "Ensure scan_docker_image returns a list."
+                }]
+            findings.extend(docker_result)
+        except Exception as e:
+            findings.append({
+                "service": "Docker",
+                "resource": image,
+                "resource_name": image,
+                "issue": f"Docker scan failed: {str(e)}",
+                "severity": "Medium",
+                "recommendation": "Check Docker image or scanner setup."
+            })
 
     return findings
 
-
-# ---------------- UI ---------------- #
 
 image_input = st.text_area(
     "Docker Images (one per line)",
@@ -49,22 +97,17 @@ image_input = st.text_area(
 
 if st.button("Run Audit"):
     images = [img.strip() for img in image_input.splitlines() if img.strip()]
-
     st.session_state.findings = run_all_checks(images)
     save_report(st.session_state.findings)
-
-
-# ---------------- DISPLAY ---------------- #
 
 findings = st.session_state.findings
 
 if findings is not None:
-
     st.subheader("Audit Summary")
     st.write(f"Total Findings: {len(findings)}")
 
     for f in findings:
-        f["severity"] = f["severity"].upper()
+        f["severity"] = str(f.get("severity", "UNKNOWN")).upper()
 
     counter = Counter(f["severity"] for f in findings)
 
@@ -112,11 +155,17 @@ if findings is not None:
         else:
             st.dataframe(alerts_df, use_container_width=True)
 
-        with open("output/report.json", "rb") as f:
-            st.download_button("Download JSON", f, "report.json")
+        try:
+            with open("output/report.json", "rb") as f:
+                st.download_button("Download JSON", f, "report.json")
+        except FileNotFoundError:
+            st.info("JSON report not found.")
 
-        with open("output/report.csv", "rb") as f:
-            st.download_button("Download CSV", f, "report.csv")
+        try:
+            with open("output/report.csv", "rb") as f:
+                st.download_button("Download CSV", f, "report.csv")
+        except FileNotFoundError:
+            st.info("CSV report not found.")
 
         try:
             with open("output/report.xlsx", "rb") as f:
@@ -129,6 +178,5 @@ if findings is not None:
                 st.download_button("Download PDF", f, "report.pdf")
         except FileNotFoundError:
             st.info("PDF report not found.")
-
     else:
         st.success("No findings detected.")

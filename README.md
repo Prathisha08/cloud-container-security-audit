@@ -1,52 +1,83 @@
-# 🔐 Cloud & Container Security Audit Tool
+# 🔐 Cloud & Container Security Audit Tool  
+## 🚀 DevSecOps Platform with Zero Trust Principles
 
-A comprehensive security auditing platform for **AWS environments and Docker containers**, featuring vulnerability scanning, reporting, dashboard visualization, and alerting.
+A comprehensive cloud security auditing platform that automates security checks across AWS resources and container workloads using DevSecOps practices and Zero Trust-aligned principles.
+
+---
+
+## 📌 Overview
+
+This project provides an end-to-end security auditing solution:
+
+- AWS resource security checks  
+- Docker & ECR vulnerability scanning  
+- Deployment using AWS ECR + EKS  
+- Interactive dashboard (Streamlit)  
+- Automated report generation  
 
 ---
 
 ## 🚀 Features
 
 ### ☁️ AWS Security Checks
-- EC2 Security Group audit (open ports)
-- S3 encryption & public access checks
-- IAM MFA & password policy validation
-- CloudTrail status monitoring
-- AWS Config status verification
+- EC2 Security Group audit  
+- S3 encryption & public access checks  
+- IAM MFA & password policy validation  
+- CloudTrail monitoring  
+- AWS Config verification  
 
-### 🐳 Docker Security Scanning
-- Vulnerability scanning using Trivy
-- Multi-image scanning support
-- Severity classification (CRITICAL, HIGH, MEDIUM, LOW)
+---
 
-### 📦 ECR Scanning
-- Scan images from AWS ECR repositories
-- Automated image analysis
+### 🐳 Container Security
+- Trivy vulnerability scanning  
+- Multi-image scanning  
+- Severity classification  
 
-### 📊 Dashboard (Streamlit)
-- Interactive UI
-- Severity-based charts
-- Service-wise filtering
-- Alerts visualization
+---
+
+### 📊 Dashboard
+- Interactive UI  
+- Charts & filters  
+- Findings visualization  
+
+---
 
 ### 📄 Reports
-- JSON
-- CSV
-- Excel
-- PDF
+- JSON  
+- CSV  
+- Excel  
+- PDF  
+
+---
 
 ### 🚨 Alerts
-- Console alerts
-- Email alerts for HIGH/CRITICAL vulnerabilities
+- Console alerts  
+- Email alerts  
 
-### ⚙️ DevSecOps Ready
-- CI/CD integration support
-- Automated security scanning workflows
+---
+
+## 🔐 Zero Trust Alignment
+
+- Continuous security validation  
+- No implicit trust  
+- Identity & access awareness (IAM checks)  
+- Secure CI/CD pipeline  
+
+---
+
+## 🔄 Workflow
+
+### DevSecOps Pipeline
+Code → Docker Build → Push to ECR → Deploy to EKS → Run App
+
+### Application Flow
+User → Dashboard → Run Audit → AWS + Docker Scan → Results → Reports
 
 ---
 
 ## 🛠️ Installation
 
 ```bash
-git clone https://github.com/<your-username>/cloud-container-security-audit.git
+git clone https://github.com/Prathisha08/cloud-container-security-audit.git
 cd cloud-container-security-audit
 pip install -r requirements.txt

@@ -1,4 +1,5 @@
 streamlit
-boto3
 pandas
+boto3
+openpyxl
 reportlab
